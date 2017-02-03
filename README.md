@@ -21,7 +21,7 @@ Term: Spring 2017
 
 + Team #
 + **Projec title**: + Team members
-	+ team member 1
+	+ Jinru Xue
 	+ team member 2
 	+ team member 3
 	+ team member 4
