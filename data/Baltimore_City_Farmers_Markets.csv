@@ -1,0 +1,55 @@
+name,day ,monthsOpen,monthsClose,openingTime,closingTime,EBTMachine,WICFMNP,seniorFMNP,FVC,foodDesert,numberOfVendors,avgFootTraffic,Location 1
+Baltimore City/JFX,Sunday,3-Apr,18-Dec,7:00 a.m. ,12:00 p.m.,N,Y,Y,Y,Bordering,68,n/a,
+Johns Hopkins Hospital,Thursday,19-May,17-Nov,10:00 a.m. , 2:00 p.m.,N,N,N,N,Yes,9,n/a,
+32nd Street/Waverly,Saturday,All year,All year,7:00 a.m., 12:00 p.m.,Y,Y,Y,Y,Bordering,40,1000,
+Druid Hill,Wednesday,1-Jun,5-Oct,3:30 p.m. , 7:30 p.m.,Y,Y,Y,Y,Bordering,6,n/a,"3100 Swann Drive
+Baltimore, MD 21217
+(39.316895224431384, -76.64628323249057)"
+Park Heights Community,Wednesday,15-Jun,23-Nov,9:30 a.m. , 2:00 p.m.,Y,Y,Y,Y,Bordering,7,n/a,"5201 Park Heights Ave Pimlico Race Course
+Baltimore, MD 21215
+(39.35301965002411, -76.66995371881086)"
+University of Maryland,Tuesday,10-May,22-Nov,10:30 a.m. , 2:30 p.m.,N,Y,Y,Y,Bordering,15,n/a,"Plaza Park Corner of Paca Street
+Baltimore, MD 21201
+(39.29805046400361, -76.6220679907452)"
+Highlandtown,Thursday,9-Jun,13-Oct,4:00 p.m. , 8:00 p.m.,Y,Y,Y,Y,Bordering,5,200,"400 Conkling Street at Eastern Ave
+Baltimore, MD 21224
+(39.280449285306304, -76.56058100031288)"
+Mt. Washington Whole Foods,Wednesday,8-Jun,26-Oct,3:30 p.m. , 6:30 p.m.,N,N,N,N,No,n/a,n/a,"1330 Smith Ave
+Baltimore, MD 21209
+(39.368130133136845, -76.6499784499245)"
+Tuesday Market in Lauraville,Tuesday,7-Jun,25-Oct,4:00 p.m. , 8:00 p.m.,N,N,N,N,No,20,400,"4500 Harford Road
+Baltimore, MD 21214
+(39.34017920446621, -76.57224105371182)"
+Govanstowne (Loyola),Wednesday,20-Jul,10-Aug,3:00 p.m. ,7:00 p.m.,Y,N,N,N,No,n/a,n/a,"5104 York Road
+Baltimore, MD
+(39.3510879806816, -76.60974278233363)"
+Harbor Hospital Community,Thursday,28-Apr,27-Oct,12:00 p.m. , 4:00 p.m.,N,n/a,n/a,n/a,Yes,11,n/a,"3001 Hanover Street at the corner of Reedbird Avenue
+Baltimore, MD 21225
+(39.22625687895186, -76.6165247473192)"
+Village of Cross Keys,Tuesday,7-Jun,25-Oct,10:00 a.m. , 2:00 p.m.,N,Y,Y,Y,No,5,n/a,"5100 Falls Road
+Baltimore, MD 21210
+(39.35590834675867, -76.64425876181815)"
+State Center Community,Wednesday,1-Jun,26-Oct,10:00 a.m.,2:00 p.m.,N,Y,Y,Y,Bordering,7,n/a,"201 Preston Street
+Baltimore, MD 21201
+(39.30244365211678, -76.62156886701894)"
+Charles Street,Friday,13-May,18-Nov,3:00 p.m. , 8:00 p.m.,N,n/a,n/a,n/a,Bordering,n/a,n/a,"1700 Charles Street Lanvale Ave at the 1700 Block of Charles Street
+Baltimore, MD 21201
+(39.308891791066856, -76.61641575179101)"
+Fell's Point Main Street,Saturday,4-Jun,12-Nov,7:30 a.m. , 11:30 a.m.,N,Y,Y,Y,Bordering,15,n/a,"800 Broadway Broadway Square
+Baltimore, MD 21231
+(39.28829162895556, -76.59223011622686)"
+Fresh Friday,Friday,3-Jun,28-Oct,10:00 a.m. , 2:00 p.m.,N,N,N,N,Bordering,5,225,"10 Hopkins Plaza
+Baltimore, MD 21202
+(39.289412428870854, -76.61644822815315)"
+BMI,Saturday,21-May,8-Oct,9:00 a.m. , 1:00 p.m.,N,Y,Y,Y,No,28,400,"1415 Key Highway
+Baltimore, MD 21230
+(39.27331461158775, -76.60168485695112)"
+Howard Park Community,Saturday,28-May,10-Dec,7:00 a.m. , 1:00 p.m.,N,Y,Y,Y,No,7,n/a,"3600 Block Woodbine Ave
+Baltimore, MD 21207
+(39.32406285941346, -76.72039618463617)"
+Go Life / Cylburn,Saturday,4-Jun,3-Dec,9:00 a.m. , 2:00 p.m.,Y,Y,Y,Y,Bordering,n/a,n/a,"2605 Bannister Road
+Baltimore, MD 21215
+(39.347220895955616, -76.65972710072214)"
+West Baltimore MARC,Saturday,4-Jun,19-Nov,9:00 a.m. , 1:00 p.m.,Y,Y,Y,Y,Bordering,7,n/a,"400 Smallwood Street
+Baltimore, MD 21223
+(39.29309070301201, -76.65175011432223)"
