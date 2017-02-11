@@ -1,0 +1,1855 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>Fallout Shelters in New York City</name>
+		<description><![CDATA[Locations of marked fallout shelters in NYC. I'm mainly focusing on Manhattan, but other locations may be added (Ex. Long island, Bronx, etc). The addresses are for streetview angles in which the signs can be clearly seen. IF an address cannot be found, the name of the building it is on will be used as a substitute. ]]></description>
+		<Folder>
+			<name>Untitled layer</name>
+			<Placemark>
+				<name>405 E. 63rd St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.95951,40.76199,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>4 W. 13th St.</name>
+				<description><![CDATA[Sign has been painted over]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.994623,40.735628,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>130 W. 16th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.997415,40.739157,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>408 E. 64th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.958936,40.762534,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>160 E. 56th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.968785,40.759773,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>210 E. 58th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.966361,40.760495,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>459 W. Broadway</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-74.000366,40.726271,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>163 Varick St.</name>
+				<description><![CDATA[Faint impression of where a sign was...]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-74.005854,40.726873,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>11th St. post office</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.989873,40.731965,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>643 W. 122nd St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.962394,40.812228,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>New York City Department of Mental Health &amp; Hygiene building</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-74.002088,40.71555,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Chelsea School</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-74.000044,40.749011,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1221 York Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.956968,40.762719,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Brooklyn Bridge</name>
+				<description><![CDATA[There was one in the "bowels" of the bridge.]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.997233,40.706327,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>440 E. 57th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.961484,40.757538000000004,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>La Salle Academy</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.989857,40.728041,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>152 W. 4th St.</name>
+				<description><![CDATA[Sign has been cut up]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-74.00061,40.731608,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1 7th Ave. S</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-74.005239,40.729722,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Chase Bank on Grove St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-74.002654,40.733265,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>187 Worth St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.999454,40.713984,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>32 Christopher St.</name>
+				<description><![CDATA[Partially painted over]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-74.001077,40.733923,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>8 E. 3rd St.</name>
+				<description><![CDATA[Like the sign at 163 Varnick, the only thing that remains is a faint impression of where it was.<br><br>The sign is now owned by a collector in Atlanta, GA.]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.990986,40.725899,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>59 E. 9th St.</name>
+				<description><![CDATA[Sign is slightly bent]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.992327,40.7314,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>483 E. 63rd St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.95812000000001,40.761359,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>467 E. 63rd St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.958408,40.761502,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>420 E. 64th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.958263,40.762242,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>453 E. 65th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.957387,40.76271,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>443 E. 65th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.957657,40.762582,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>419 E. 65th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.95823,40.762839,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>401 E. 65th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.958829,40.763096,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>414 E. 64th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.958627,40.762395,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>411 E. 63rd St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.95928,40.761862,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>55 Henry St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.994897,40.713083,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>150 St. Nicholas Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.95291800000001,40.804647,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>471 E. 11th St.</name>
+				<description><![CDATA[Corner is slightly bent on the sign]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.982398,40.728774,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>58 Vandam St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-74.006863,40.726644,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>112 E. 63rd St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.967339,40.765251,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>116 E. 63rd St.</name>
+				<description><![CDATA[MIA sign]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.966957,40.76507200000001,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>92 Bayard St.</name>
+				<description><![CDATA[Unknown if still there.]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.999146,40.715729,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1231 2nd Ave.</name>
+				<description><![CDATA[MIA sign]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.962067,40.764114,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>207 E. 58th Ave.</name>
+				<description><![CDATA[MIA sign]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.966673,40.760572,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>504 1st Ave.</name>
+				<description><![CDATA[Sign is barely noticeable, but it is there]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.975388,40.740673,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Gramercy Park</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.986008,40.737698,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>217 E. 21st St.</name>
+				<description><![CDATA[MIA sign]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.983093,40.737251,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>220 E. 26th St.</name>
+				<description><![CDATA[MIA sign]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.980301,40.740265,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>34 E. 69th St.</name>
+				<description><![CDATA[MIA sign]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.966331,40.769718,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>315 E. 65th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.960815,40.764145,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>313 E. 65th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.960991,40.763935,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1200 York Ave.</name>
+				<description><![CDATA[MIA sign]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.95745,40.762059,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>956 Lexington Ave.</name>
+				<description><![CDATA[MIA sign]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.963394,40.768925,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>339 E. 74th St.</name>
+				<description><![CDATA[MIA sign]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.9561,40.769428,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>343 E. 74th St.</name>
+				<description><![CDATA[MIA sign]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.955971,40.769363,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1180 2nd Ave.</name>
+				<description><![CDATA[MIA sign]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.962578,40.76273,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>56 Franklin St.</name>
+				<description><![CDATA[Sign is actually on Cortlandt Alley, but is visible from 56 Franklin]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-74.002831,40.717246,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>284 W. 83rd St.</name>
+				<description><![CDATA[Sign is in the back of a corridor.]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.97882,40.786979,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>478 West End Ave.</name>
+				<description><![CDATA[MIA sign]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.979034,40.786961,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>408 E. 64th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.959038,40.762291,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>418 E. 64th St.</name>
+				<description><![CDATA[Sign's in an alleyway]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.958458,40.762245,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>414 E. 64th St.</name>
+				<description><![CDATA[MIA sign]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.95874,40.762196,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>416 E. 64th St.</name>
+				<description><![CDATA[MIA sign]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.958633,40.762131000000004,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>333 E. 62nd St.</name>
+				<description><![CDATA[Near the entrance on 62nd street.]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.961753,40.762101,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>306 W. 33rd St.</name>
+				<description><![CDATA[4 shelters at this location]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.995171,40.751175,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>175 E. 3rd St.</name>
+				<description><![CDATA[MIA sign]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.984055,40.723488,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>421 W. 56th St.</name>
+				<description><![CDATA[Sign is behind a fence]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.987343,40.767899,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1069 Lexington Ave.</name>
+				<description><![CDATA[MIA sign]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.96067,40.772938,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>269 W. 85th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.977661,40.787983,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>854 Lexington Ave.</name>
+				<description><![CDATA[MIA sign]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.965881,40.765739,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Canal St. &amp; Broadway (somewhere...)</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-74.001999,40.719322,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>271 W. 118th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.95362,40.805256,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>254 W. 24th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.997174,40.745513,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Meyer London School</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.991938,40.713037,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>964 Columbus Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.962399,40.800325,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Lillie Deveraux Blake School</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.960334,40.777418,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Amsterdam Ave. School</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.927699,40.85293600000001,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>30 E. 72nd St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.965237,40.771533,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>73 E. 11th St.</name>
+				<description><![CDATA[2 signs on a lightpost]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.991815,40.732602,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Lenox Hill Hospital</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.960809,40.773319,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>231 E. 63rd St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.963479,40.76338400000001,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>154 W. 93rd St.</name>
+				<description><![CDATA[Sign is in surprisingly good condition]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.970851,40.791599,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>44 Crescent St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.934233,40.757126,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>45 Skillman Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.908792,40.745427,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>42 31st Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.912381,40.759357,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>11 48th Ave.</name>
+				<description><![CDATA[Sign is in surprisingly good condition]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.926305,40.739941,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>26 47th Ave.</name>
+				<description><![CDATA[Sign looks to have been altered in some way.]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.918709,40.740909,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>22 36th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.929183,40.743666,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>73 Bedford Ave.</name>
+				<description><![CDATA[Sign has some sort of damage on it]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.953331,40.722258,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>51 62nd St.</name>
+				<description><![CDATA[Sign has been painted over on the edges]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.900255,40.752733,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>28 97th Pl.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.861223,40.734003,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>62 108th Street</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.851876,40.736641,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>50 102nd St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.852836,40.730714,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>22 63rd Dr.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.85852,40.731159,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>210 Martine Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.765077,41.031505,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>342 Martine Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.763855,41.031878,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1 S. Broadway (NY-22)</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.763323,41.0335,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>40 Barker Ave.</name>
+				<description><![CDATA[2 signs]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.767319,41.035507,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>154 Wilson St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.961637,40.705961,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Sandford St. School</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.952912,40.692571,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>68 Lincoln Pl.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.977639,40.676806,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>467 Pacific St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.982542,40.685056,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>306 Pacific St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.988164,40.68732,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>77 Navy St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.980751,40.697803,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>475 Throop Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.941409,40.686194,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>708 Monroe St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.924573,40.688321,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1000 Herkimer St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.920329,40.678156,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>333 Rugby Rd.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.965631,40.641609,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>3150 Newkirk Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.947089,40.640219,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>81 Veronica Pl.</name>
+				<description><![CDATA[Sign has been cut off at the top]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.953038,40.648274,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>580 Parkside Ave.</name>
+				<description><![CDATA[Sign has been removed]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.95413,40.656137,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>416 Empire Blvd.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.948666,40.663885,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1693 Weeks Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.90776,40.844435,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1932 Andrews Ave. S.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.913154,40.854606,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>85 Catalpa Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.89645,40.703978,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>28 Wells St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.875278,40.678529,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>547 Macon St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.929773,40.683242,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>374 Alabama Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.89793500000002,40.667828,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>25 79th Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.861395,40.705215,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>6 63rd Dr.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.863232,40.728137,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>214-43 35th Ave.</name>
+				<description><![CDATA[Sign has been bent upright at the bottom]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.771109,40.769723,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>20 11th Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.809567,40.792343,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>354 5th Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.984208,40.67196,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>382 17th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.986295,40.660856,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1238 Willoughby Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.922751,40.704091,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>531 W. 45th St.</name>
+				<description><![CDATA[Sign is partially covered by some sort of label]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.995162,40.761943,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>100 W. 84th St.</name>
+				<description><![CDATA[Sign has been chopped at the bottom]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.97349300000002,40.785189,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>207 W. 121st St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.95105300000002,40.806625000000004,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1019 Clay Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.913409,40.827608,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>392 E. 145th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.919952,40.813523,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>242 E. 109th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.941711,40.792678,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>219 E. 120th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.937417,40.800095,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>2124 5th Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.939504,40.809889,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1598 E. 22nd St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.951769,40.612588,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>45 36th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.922236,40.758865,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>26 162nd St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.807086,40.726560000000006,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>4 164th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.805334,40.731424,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>21 128th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.83983600000002,40.790403,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>53 23rd Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.842829,40.778411,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1096 E. New York Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.925725,40.665503,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1586 Dean St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.93545900000001,40.675957,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>67 Otis Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.854153,40.740819,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>166 Pennsylvania Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.896275,40.673824,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>294 E. 167th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.913844,40.832291,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>2195 Bathgate Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.893422,40.853063,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1255 Ward Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.877586,40.830791,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1029 59th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-74.0037,40.633084,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>249 Avenue C</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.977289,40.640333,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>301 W. 140th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.944454,40.819895,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1122 E. 10th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.965628,40.621483,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>817 4th Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-74.000433,40.657847,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>30 44th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.911405,40.762979,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>18 W. 55th St.</name>
+				<description><![CDATA[2 signs next to each other]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.975883,40.762168,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>477 W. 52nd St.</name>
+				<description><![CDATA[Sign has been painted red for some reason]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.990236,40.765568,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>284 Pulaski St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.940378,40.693588,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>808 LaFayette Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.940677,40.691228,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>193 Marcus Garvey Blvd.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.939645,40.691665,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>95 Lewis Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.93709900000002,40.694147,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>972 DeKalb Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.936429,40.69332800000001,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>2759 Throop Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.850755,40.86709,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1565 Purdy St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.853377,40.838141,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>68 26th Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.818067,40.774363,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>749 Courtlandt Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.916979,40.821635,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1177 Neil Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.852819,40.854683,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1691 Seward Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.868494,40.818626,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>813 Taylor Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.862841,40.821717,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>583 Thieriot Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.860708,40.816892,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>2164 Blackrock Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.850999,40.82917,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>4195 Carpenter Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.86154900000001,40.892234,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>87 128th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.813335,40.682962,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>0 108th Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.79674,40.694045,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>83 109th Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.79099,40.694344,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>47 167th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.786972,40.697053,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>26 Wren Pl.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.78198,40.70060500000001,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>25 175th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.794069,40.73739,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>8 33rd Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.783973,40.769594,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>22 34th Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.812132,40.767338,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>18 34th Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.812603,40.767372,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>92 220th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.736388,40.723014,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>79 Penelope Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.875099,40.719392,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>391 E. 139th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.922653,40.810047000000004,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>460 Tinton Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.907135,40.810484,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1921 Hone Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.85672,40.851246,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>30 Dieterle Crescent</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.861037,40.720748,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>557 Jackson Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.908787,40.813527,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>3839 Paulding Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.853689,40.881914,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1028 Anderson Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.926634,40.832725,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>58 E. 109th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.947899,40.795354,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>2147 Brown St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.938501,40.593535,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>P.S. 206</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.94858200000002,40.597318,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1514 E. 13th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.961093,40.612343,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1239 Avenue O</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.961251,40.612574,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>5333 20th Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.978744,40.622995,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>371 W. 120th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.955982,40.807948,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>135 W. 122th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.948437,40.806351,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>163 W. 135th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.942697,40.814714,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>27 88th Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.853123,40.691951,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>72 85th Dr.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.859948,40.694455,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>32 Union Turnpike</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.835434,40.71187200000001,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>4000 Monticello Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.838541,40.89136,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1835 Madison Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.943358,40.802311,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>2 Edgecombe Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.947479,40.817383,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>341 W. 135th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.947529,40.817103,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1003 Walton Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.922142,40.830227,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>2930 Valentine Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.88745,40.87112,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>50 S. 6th Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.838354,40.909668,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>179 Rochester Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.928228,40.672666,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>809 Van Siclen Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.885535,40.659936,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1508 Archer St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.862913,40.837801,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1313 Boynton Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.878714,40.831803,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>6 218th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.749637,40.682192,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>11846 Ridgedale St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.753256,40.68158600000001,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>28 Wells St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.875303,40.678525,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>85 Catalpa Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.896445,40.70398,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>39 86th Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.717799,40.731938,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>86 Riverdale Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.913537,40.66007,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>2416 Creston Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.89922,40.861239,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>266 E. 183rd St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.898849,40.85687,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>338 W. 17th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-74.002741,40.742433,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>428 W. 16th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-74.00576,40.742751,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>15 53rd Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.873171,40.738087,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>53 90th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.873291,40.737803,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>89 55th Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.873275,40.736584,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>41 90th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.873062,40.736449,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>75 St. James Ave.</name>
+				<description><![CDATA[I wouldn't mind owning the apartment next to the sign! lol]]></description>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<Point>
+					<coordinates>-73.877461,40.740816,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>6 E. 29th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.986386,40.74519,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>105 E. 12th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.989637,40.732676,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>91 Claremont Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.96272,40.811662,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>780 Post Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-74.126987,40.631056,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>188 Broadway</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-74.117391,40.636816,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>47 Forest Park Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.753607,40.930273,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>88 Barclay Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.8183,40.760303,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>73 204th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.753002,40.70556,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>39 109th Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.755042,40.707842,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>254 Valentine Ln.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.89772,40.915898,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1675 E. 3rd St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.970795,40.609504,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>112 Avenue P</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.983827,40.607482,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>8101 15th Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-74.006591,40.613902,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>157 74th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-74.031058,40.632928,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>7151 Ridge Blvd.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-74.02933,40.634286,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>9748 4th Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-74.032405,40.61448000000001,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>1686 Cropsey Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-74.010083,40.603838,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>2536 Neptune Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.992469,40.578411,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>295 Neptune Ave.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.964201,40.581242,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>39 Lafayette St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.845522,40.670919,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>P.S. 108</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.831277,40.679483,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>7 88th St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-73.84425,40.657987,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>114 Targee St.</name>
+				<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+				<Point>
+					<coordinates>-74.083444,40.624196,0.0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Style id='icon-503-DB4436-normal'>
+			<IconStyle>
+				<color>ff3644DB</color>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+				</Icon>
+				<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.0</scale>
+			</LabelStyle>
+		</Style>
+		<Style id='icon-503-DB4436-highlight'>
+			<IconStyle>
+				<color>ff3644DB</color>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+				</Icon>
+				<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+			<LabelStyle>
+				<scale>1.1</scale>
+			</LabelStyle>
+		</Style>
+		<StyleMap id='icon-503-DB4436'>
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#icon-503-DB4436-normal</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#icon-503-DB4436-highlight</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Style id='icon-503-DB4436-nodesc-normal'>
+			<IconStyle>
+				<color>ff3644DB</color>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+				</Icon>
+				<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.0</scale>
+			</LabelStyle>
+			<BalloonStyle>
+				<text><![CDATA[<h3>$[name]</h3>]]></text>
+			</BalloonStyle>
+		</Style>
+		<Style id='icon-503-DB4436-nodesc-highlight'>
+			<IconStyle>
+				<color>ff3644DB</color>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+				</Icon>
+				<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+			<LabelStyle>
+				<scale>1.1</scale>
+			</LabelStyle>
+			<BalloonStyle>
+				<text><![CDATA[<h3>$[name]</h3>]]></text>
+			</BalloonStyle>
+		</Style>
+		<StyleMap id='icon-503-DB4436-nodesc'>
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#icon-503-DB4436-nodesc-highlight</styleUrl>
+			</Pair>
+		</StyleMap>
+	</Document>
+</kml>
