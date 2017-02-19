@@ -6,7 +6,6 @@ output: pdf_document
 ---
 ```{r,warning=FALSE}
 spending=read.csv("spending_NYS.csv")
-newyork=c("NEW YORK","BROOKLYN","BRONX")
 manhattan=spending[spending$City=="NEW YORK",]
 manhattan$Price.Score=as.numeric(as.character(manhattan$Score))
 
@@ -20,23 +19,6 @@ manhattan=merge(manhattan,performance,by.x="Hospital.Name",by.y="hospital")
 manhattan=manhattan[,c("Hospital.Name","Address","Phone.Number","City","ZIP.Code","Price.Score","Performance.Score","Longitude","Latitude")]
 
 write.csv(manhattan,"manhattan_hospital_basic_update.csv")
-```
-
-```{r}
-library(RJSONIO)
-geocodeAdddress <- function(address) {
-  url <- "http://maps.google.com/maps/api/geocode/json?address="
-  url <- URLencode(paste(url, address, "&sensor=false", sep = ""))
-  x <- fromJSON(url, simplify = FALSE)
-  if (x$status == "OK") {
-    out <- c(x$results[[1]]$geometry$location$lng,
-             x$results[[1]]$geometry$location$lat)
-  } else {
-    out <- NA
-  }
-  Sys.sleep(0.2)  # API only allows 5 requests per second
-  out
-}
 ```
 
 
