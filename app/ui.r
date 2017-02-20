@@ -1,40 +1,40 @@
-library(shiny)
+#
+# This is the user-interface definition of a Shiny web application. You can
+# run the application by clicking 'Run App' above.
+#
+# Find out more about building applications with Shiny here:
+# 
+#    http://shiny.rstudio.com/
+#
 
+library(shiny)
+library(datasets)
+library(ggplot2)
+library(shinythemes)
+library("leaflet")
+library("dplyr")
+library("png")
+library("grid")
 # Define UI for application that draws a histogram
-shinyUI(fluidPage(
-  
-  # Application title
-  titlePanel("2009 Manhattan Housing Sales"),
-  
-  # Sidebar with a selector input for neighborhood
-  sidebarLayout(
-    sidebarPanel(
-      selectInput("nbhd", label = h5("Choose a Manhattan Neighborhood"), 
-                         choices = list("all neighborhoods"=0,
-                                        "Central Harlem"=1, 
-                                        "Chelsea and Clinton"=2,
-                                        "East Harlem"=3, 
-                                        "Gramercy Park and Murray Hill"=4,
-                                        "Greenwich Village and Soho"=5, 
-                                        "Lower Manhattan"=6,
-                                        "Lower East Side"=7, 
-                                        "Upper East Side"=8, 
-                                        "Upper West Side"=9,
-                                        "Inwood and Washington Heights"=10), 
-                         selected = 0)
-      #sliderInput("p.range", label=h3("Price Range (in thousands of dollars)"),
-      #            min = 0, max = 20000, value = c(200, 10000))
-    ),
-    # Show two panels
-    mainPanel(
-      #h4(textOutput("text")),
-      h3(code(textOutput("text1"))),
-      tabsetPanel(
-        # Panel 1 has three summary plots of sales. 
-        tabPanel("Sales summary", plotOutput("distPlot")), 
-        # Panel 2 has a map display of sales' distribution
-        tabPanel("Sales map", plotOutput("distPlot1")))
-    )
- )
-))
+
+
+shinyUI(navbarPage("Hospital New York",theme = shinytheme("cerulean"),
+                   tabPanel("Introduction",
+                            navlistPanel("Introduction",
+                                         tabPanel("Introduction",
+                                                  includeMarkdown("introduction.md")),
+                                         tabPanel("Contact",
+                                                  includeMarkdown("contact.md"))
+                            )),
+                   tabPanel("Map", titlePanel(h2("Map")),
+                            # Sidebar with controls to select the variable to plot against mpg
+                            # and to specify whether outliers should be included
+                            leafletOutput("nyc_map",height=600)
+                   ),
+        
+                  tabPanel("Hospital Information",titlePanel(h2("Hospital Information")),
+                         #  tableOutput("view")
+                         fluidRow(
+                           DT::dataTableOutput('rawdata'))
+                      )))
 
