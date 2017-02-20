@@ -16,16 +16,22 @@ manhattan$Price.Score=as.numeric(as.character(manhattan$Score))
 performance=read.csv("ny_performance.csv")
 manhattan=merge(manhattan,performance,by.x="Hospital.Name",by.y="hospital")
 
-manhattan=manhattan[,c("Hospital.Name","Address","Phone.Number","City","ZIP.Code","Price.Score","Performance.Score","Longitude","Latitude")]
 
-write.csv(manhattan,"manhattan_hospital_basic_update.csv")
 ```
 
 
 ```{r}
+source("../desktop/geoAddress.R")
+
 for (i in (1:nrow(manhattan)))
-{manhattan$Longitude[i]=geocodeAdddress(manhattan$Adress[i])[1]
+{manhattan$Longitude[i]=geoAddress(manhattan$Address[i])[1]
+manhattan$Latitude[i]=geoAddress(manhattan$Address[i])[2]
 }
+
+manhattan=manhattan[,c("Hospital.Name","Address","Phone.Number","City","ZIP.Code","Price.Score","Performance.Score","Longitude","Latitude")]
 ```
+
+
+
 
 
