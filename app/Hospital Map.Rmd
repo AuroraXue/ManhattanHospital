@@ -10,7 +10,23 @@ library("grid")
 
 filename<-"../data/hospital_manhattan_basic_info.csv"
 Manhattan_hospital<-read.csv(file = filename,header=T)
-
+Manhattan_hospital<-read.csv("hospital_manhattan_basic_info.csv")
+# summary(Manhattan_hospital$Price.Score)
+cost<-c()
+for (i in 1:nrow(Manhattan_hospital)){
+  if (is.na(Manhattan_hospital$Price.Score[i])==FALSE){
+    if (Manhattan_hospital$Price.Score[i]<0.965){
+    cost[i]<-"Lower than average"
+  }else if(Manhattan_hospital$Price.Score[i]>=0.965 & Manhattan_hospital$Price.Score[i]<=0.9975){
+    cost[i]<-"About average"
+  }else{
+     cost[i]<-"Above average"
+    }
+  }else{
+     cost[i]<="NA"
+   }
+}
+Manhattan_hospital<-cbind(Manhattan_hospital,cost)
 
 content1<-paste("<b><a href ='http://www.mountsinai.org'> Mount Sinai Hospital</a><b>","<br/>",
                 "Overall Rank: ","<br/>", 
