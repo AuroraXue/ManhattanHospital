@@ -1,0 +1,19 @@
+---
+title: "spending_map_state"
+author: "Vanessa Huang, yh2873"
+date: "2/19/2017"
+output: html_document
+---
+
+```{r}
+hispital_code=c(330024,330046,330100,330101,330119,330169,330199,330204,
+330214,330240,330270,330387)
+doctors=read.csv("Physician_NYC.csv")
+doc_hos <- list()
+for (i in 1:length(hispital_code)) {
+  doc_hos[[i]] = which(doctors$Hospital.affiliation.CCN.1 == hispital_code[i] | doctors$Hospital.affiliation.CCN.2 == hispital_code[i]| doctors$Hospital.affiliation.CCN.3 == hispital_code[i])
+}
+head(doc_hos[[1]])
+head(doc_hos[[2]])
+```
+

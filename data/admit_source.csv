@@ -1,0 +1,18 @@
+src_adms,short_description,description
+0,ANOMALY,"invalid value, if present, translate to '9'"
+1,Physician Referral,Non-Health Care Facility Point of Origin (Physician Referral) - The patient was admitted to this facility upon an order of a physician. 
+2,Clinic Referral,Clinic referral - The patient was admitted upon the recommendation of this facility's clinic physician. 
+3,HMO referral,"HMO referral - Reserved for national Prior to 3/08, HMO referral - The patient was admitted upon the recommendation of an health maintenance organization (HMO) physician. "
+4,Transfer from hospital,"Transfer from hospital (Different Facility) - The patient was admitted to this facility as a hospital 
+transfer from an acute care facility where he or she was an inpatient. "
+5,Transfer from a skilled nursing facility (SNF),Transfer from a skilled nursing facility (SNF) or Intermediate Care Facility (ICF) - The patient was admitted to this facility as a transfer from a SNF or ICF where he or she was a resident. 
+6,Transfer from another health care facility,Transfer from another health care facility - The patient was admitted to this facility as a transfer from another type of health care facility not defined  elsewhere in this code list where he or she was an  inpatient.
+7,Emergency room,"The patient was admitted to this facility after receiving services in this facility's emergency room department (CMS discontinued this code 07/2010, although a small number of claims with this code appear after that time). "
+8,Court/law enforcement,Court/law enforcement - The patient was admitted upon the direction of a court of law or upon the request of a law enforcement agency's representative.
+9,Information not available,Information not available - The means by which the patient was admitted is not known.
+A,Reserved for National Assignment,Reserved for National Assignment. (eff. 3/08) Prior to 3/08 defined as: Transfer from a Critical Access Hospital - patient was admitted/referred to this  facility as a transfer from a Critical Access Hospital.
+B,Transfer from Another Home Health Agency,"Transfer from Another Home Health Agency - The patient was admitted to this home health agency as a transfer from another home health agency.(Discontinued July 1, 2010- See Condition Code 47)"
+C,Readmission to Same Home Health Agency,"Readmission to Same Home Health Agency - The patient was readmitted to this home health agency within the same home health episode period. (Discontinued July 1, 2010)"
+D,separate claim transfer,"Transfer from hospital inpatient in the same facility resulting in a separate claim to the payer - The  patient was admitted to this facility as a transfer from hospital inpatient within this facility resulting in a separate claim to the payer. "
+E,Transfer from Ambulatory Surgical Center,Transfer from Ambulatory Surgical Center
+F,hospice enrolled transfer,Transfer from hospice and is under a hospice plan of care or enrolled in hospice program
