@@ -1,3 +1,6 @@
+
+
+
 complications<-read.csv("Complications_Manhattan.csv")
 new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
 colnames(new_complications)<-levels(complications$Measure.Name)
