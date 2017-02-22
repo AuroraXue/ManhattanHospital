@@ -26,60 +26,59 @@ shinyUI(navbarPage("Hospital New York",theme = shinytheme("cerulean"),
                                                   includeMarkdown("contact.md"))
                             )),
                    tabPanel("Hospital ", titlePanel(h2("Hospital")),
+                            
                             sidebarLayout(
                               sidebarPanel(
+                                
+                                #     Dropdown outcome
+                                
                                 selectInput(inputId = "outcome",
-                                            h3("Ranked According To"),
+                                            h4("Ranked According To"),
                                             choices = outcomes),
+                                #     Dropdown states
+                                #selectInput(inputId = "state",
+                                #h4("Select State"),choices = states),  
+                                
                                 
                                 
                                 sliderInput(inputId = "range",
-                                            h3("Ranks"),
+                                            h4("Ranks"),
                                             min = 1,
                                             max = 100,
                                             value = c(1, 20)),
+                                
                                 
                                 
                                 checkboxGroupInput("fields",
                                                    h4("Fields"),
                                                    choices = columns)
                               ),
+                              
                               mainPanel(
                                 tabsetPanel(type = "tabs", selected = "Info",
                                             
-                                            tabPanel("Hospital",leafletOutput("nyc_map",height=600)),
-                                           
+                                            
+                                            tabPanel("Hospital Info", leafletOutput("nyc_map")),
+                                         #Radar plot   tabPanel("Radar Plot",leafletOutput())
                                            
                                             
-                                          
-                                            tabPanel('radarchart ', plotOutput('barplot')),
-                                            tabPanel('Doctor Table',
-                                                     h3(textOutput('outcome')),
+                                             tabPanel('Table',
+                                                    h3(textOutput('outcome')),
                                                     tableOutput("filtered")),
-                                            tabPanel('Table',
-                                                     h3(textOutput('outcome')),
-                                                    tableOutput("filtered")),
-                                             
+                                            
                                             tabPanel('Plot ggplot', plotOutput('barplot'))
-                                            
                                            
                                             
                                 )
-                              
-                                
-                            # Sidebar with controls to select the variable to plot against mpg
-                            # and to specify whether outliers should be included
-                           # leafletOutput("nyc_map",height=600)
+                              )
+                            
+                            
                    )))
 
-             #     tabPanel("Hospital Information",titlePanel(h2("Hospital Information")),
-             #            #  tableOutput("view")
-              #           fluidRow(
-              #             DT::dataTableOutput('rawdata'))
-               #       )
+             
              
                              )
-                           )
+                           
                   
 
 
