@@ -6,7 +6,7 @@ len=length(specialty_name)
 
 # rank of doctor from Bellevue based on the score result
 
-doctorScoreBellevue<-read.csv("score_BELLEVUE_HOSPITAL_CENTER.csv")
+doctorScoreBellevue<-read.csv("../data/score_BELLEVUE_HOSPITAL_CENTER.csv")
 specialty_name<-names(table(doctorScoreBellevue$Primary.specialty))[order(table(doctorScoreBellevue$Primary.specialty),decreasing = TRUE)[1:10]]
 len=length(specialty_name)
 doctorScoreBellevue$Name<-paste(doctorScoreBellevue$First.Name,doctorScoreBellevue$Last.Name)
