@@ -196,408 +196,451 @@ shinyServer(function(input, output) {
       # $ Value                           (dbl) 10.1, 10.2, 10.5, 10.5, 10.6, 10.7, 10.8, 11.0, 11.1, 11.2, 11....
     })
     
+    # 
+    # output$radarPlot1 <- renderPlot({
+    #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
+    #   colnames(new_complications)<-levels(complications$Measure.Name)
+    #   colnames(new_complications)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   for(i in rownames(new_complications)){
+    #     for(j in colnames(new_complications)){
+    #       new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
+    #     }
+    #   }
+    #   new_complications<-new_complications[,-4]
+    #   new_complications<-apply(new_complications,2,order)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   averageNYCperformance<-rep(6,ncol(new_complications))
+    #   new_complications=rbind(new_complications,averageNYCperformance)
+    #   
+    #   BELLEVUE_HOSPITAL_CENTER<-new_complications["BELLEVUE HOSPITAL CENTER",]
+    #   BELLEVUE_HOSPITAL_CENTER=as.data.frame(rbind(rep(11,10) , rep(0,10) , BELLEVUE_HOSPITAL_CENTER))
+    #   
+    #  radarchart( BELLEVUE_HOSPITAL_CENTER  , axistype=1 , 
+    #                   
+    #                   #custom polygon
+    #                   pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=2 , 
+    #                   
+    #                   #custom the grid
+    #                   cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
+    #                   
+    #                   title = "BELLEVUE HOSPITAL CENTER COMPLICATIONS PERFORMANCE",
+    #                   vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
+    #                   #custom labels
+    #                   vlcex=0.4 
+    #   )
+    #   legend(0.9,1.2,
+    #          legend=c("0-3:Best Performance","3-6:Below Average","6-9:Above Average","9-12:Worse Performance"),text.col="black",
+    #          bty = "n",cex = 0.7)
+    # })
+    # 
+    # output$radarPlot2 <- renderPlot({
+    #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
+    #   colnames(new_complications)<-levels(complications$Measure.Name)
+    #   colnames(new_complications)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   for(i in rownames(new_complications)){
+    #     for(j in colnames(new_complications)){
+    #       new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
+    #     }
+    #   }
+    #   new_complications<-new_complications[,-4]
+    #   new_complications<-apply(new_complications,2,order)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   averageNYCperformance<-rep(6,ncol(new_complications))
+    #   new_complications=rbind(new_complications,averageNYCperformance)
+    #   
+    #   #Spider for HARLEM HOSPITAL CENTER
+    #   HARLEM_HOSPITAL_CENTER<-new_complications["HARLEM HOSPITAL CENTER",]
+    #   HARLEM_HOSPITAL_CENTER=as.data.frame(rbind(rep(11,10) , rep(0,10) , HARLEM_HOSPITAL_CENTER))
+    #   radarchart( HARLEM_HOSPITAL_CENTER  , axistype=1 , 
+    #               
+    #               #custom polygon
+    #               pcol=rgb(0.9,0.6,0.5,0.9) , pfcol=rgb(0.7,0.5,0.5,0.5) , plwd=2 , 
+    #               
+    #               #custom the grid
+    #               cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
+    #               
+    #               title = "HARLEM HOSPITAL CENTER COMPLICATIONS PERFORMANCE",
+    #               
+    #               vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
+    #               
+    #               #custom labels
+    #               vlcex=0.4 
+    #   )
+    #   legend(0.9,1.2,
+    #          legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
+    #          bty = "n",cex = 0.7)
+    #   
+    # })
+    # 
+    # output$radarPlot3 <- renderPlot({
+    #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
+    #   colnames(new_complications)<-levels(complications$Measure.Name)
+    #   colnames(new_complications)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   for(i in rownames(new_complications)){
+    #     for(j in colnames(new_complications)){
+    #       new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
+    #     }
+    #   }
+    #   new_complications<-new_complications[,-4]
+    #   new_complications<-apply(new_complications,2,order)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   averageNYCperformance<-rep(6,ncol(new_complications))
+    #   new_complications=rbind(new_complications,averageNYCperformance)
+    #   
+    #   HOSPITAL_FOR_SPECIAL_SURGERY<-new_complications["HOSPITAL FOR SPECIAL SURGERY",]
+    #   HOSPITAL_FOR_SPECIAL_SURGERY=as.data.frame(rbind(rep(11,10) , rep(0,10) , HOSPITAL_FOR_SPECIAL_SURGERY))
+    #   radarchart( HOSPITAL_FOR_SPECIAL_SURGERY  , axistype=1 , 
+    #               
+    #               #custom polygon
+    #               pcol=rgb(0.2,0.3,0.5,0.9) , pfcol=rgb(0.2,0.2,0.5,0.5) , plwd=2 , 
+    #               
+    #               #custom the grid
+    #               cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
+    #               
+    #               title = "HARLEM HOSPITAL CENTER COMPLICATIONS PERFORMANCE",
+    #               
+    #               vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
+    #               
+    #               #custom labels
+    #               vlcex=0.4 
+    #   )
+    #   legend(0.9,1.2,
+    #          legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
+    #          bty = "n",cex = 0.7)
+    #   
+    # })
+    # 
+    # output$radarPlot4 <- renderPlot({
+    #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
+    #   colnames(new_complications)<-levels(complications$Measure.Name)
+    #   colnames(new_complications)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   for(i in rownames(new_complications)){
+    #     for(j in colnames(new_complications)){
+    #       new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
+    #     }
+    #   }
+    #   new_complications<-new_complications[,-4]
+    #   new_complications<-apply(new_complications,2,order)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   averageNYCperformance<-rep(6,ncol(new_complications))
+    #   new_complications=rbind(new_complications,averageNYCperformance)
+    #   
+    #   LENOX_HILL_HOSPITAL<-new_complications["LENOX HILL HOSPITAL",]
+    #   LENOX_HILL_HOSPITAL=as.data.frame(rbind(rep(11,10) , rep(0,10) , LENOX_HILL_HOSPITAL))
+    #   radarchart( LENOX_HILL_HOSPITAL , axistype=1 , 
+    #               
+    #               #custom polygon
+    #               pcol=rgb(0.9,0.8,0.5,0.9) , pfcol=rgb(0.9,0.8,0.6,0.5) , plwd=2 , 
+    #               
+    #               #custom the grid
+    #               cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
+    #               
+    #               title = "LENOX HILL HOSPITAL COMPLICATIONS PERFORMANCE",
+    #               
+    #               vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
+    #               
+    #               #custom labels
+    #               vlcex=0.4 
+    #   )
+    #   legend(0.9,1.2,
+    #          legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
+    #          bty = "n",cex = 0.7)
+    #   
+    # })
+    # 
+    # output$radarPlot5 <- renderPlot({
+    #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
+    #   colnames(new_complications)<-levels(complications$Measure.Name)
+    #   colnames(new_complications)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   for(i in rownames(new_complications)){
+    #     for(j in colnames(new_complications)){
+    #       new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
+    #     }
+    #   }
+    #   new_complications<-new_complications[,-4]
+    #   new_complications<-apply(new_complications,2,order)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   averageNYCperformance<-rep(6,ncol(new_complications))
+    #   new_complications=rbind(new_complications,averageNYCperformance)
+    #   
+    #   # Spider for METROPOLITAN HOSPITAL CENTER
+    #   METROPOLITAN_HOSPITAL_CENTER<-new_complications["METROPOLITAN HOSPITAL CENTER",]
+    #   METROPOLITAN_HOSPITAL_CENTER=as.data.frame(rbind(rep(11,10) , rep(0,10) , METROPOLITAN_HOSPITAL_CENTER))
+    #   radarchart( METROPOLITAN_HOSPITAL_CENTER , axistype=1 , 
+    #               
+    #               #custom polygon
+    #               pcol=rgb(0.9,0.6,1,0.9) , pfcol=rgb(0.9,0.8,0.9,0.5) , plwd=2 , 
+    #               
+    #               #custom the grid
+    #               cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
+    #               
+    #               title = "METROPOLITAN HOSPITAL CENTER COMPLICATIONS PERFORMANCE",
+    #               
+    #               vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
+    #               
+    #               #custom labels
+    #               vlcex=0.4 
+    #   )
+    #   legend(0.9,1.2,
+    #          legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
+    #          bty = "n",cex = 0.7)
+    #   
+    #   
+    #   
+    # })
+    # 
+    # output$radarPlot6 <- renderPlot({
+    #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
+    #   colnames(new_complications)<-levels(complications$Measure.Name)
+    #   colnames(new_complications)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   for(i in rownames(new_complications)){
+    #     for(j in colnames(new_complications)){
+    #       new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
+    #     }
+    #   }
+    #   new_complications<-new_complications[,-4]
+    #   new_complications<-apply(new_complications,2,order)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   averageNYCperformance<-rep(6,ncol(new_complications))
+    #   new_complications=rbind(new_complications,averageNYCperformance)
+    #   
+    #   # Spider for MOUNT SINAI BETH ISRAEL/PETRIE CAMPUS
+    #   MOUNT_SINAI_BETH_ISRAELPETRIE_CAMPUS<-new_complications["MOUNT SINAI BETH ISRAEL/PETRIE CAMPUS",]
+    #   MOUNT_SINAI_BETH_ISRAELPETRIE_CAMPUS=as.data.frame(rbind(rep(11,10) , rep(0,10) , MOUNT_SINAI_BETH_ISRAELPETRIE_CAMPUS))
+    #   radarchart( MOUNT_SINAI_BETH_ISRAELPETRIE_CAMPUS , axistype=1 , 
+    #               
+    #               #custom polygon
+    #               pcol=rgb(0.6,0.2,0.4,0.9) , pfcol=rgb(0.6,0.2,0.2,0.5) , plwd=2 , 
+    #               
+    #               #custom the grid
+    #               cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
+    #               
+    #               title = "METROPOLITAN HOSPITAL CENTER COMPLICATIONS PERFORMANCE",
+    #               
+    #               vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
+    #               
+    #               #custom labels
+    #               vlcex=0.4 
+    #   )
+    #   legend(0.9,1.2,
+    #          legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
+    #          bty = "n",cex = 0.7)
+    #   
+    #   
+    # })
+    # 
+    # output$radarPlot7 <- renderPlot({
+    #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
+    #   colnames(new_complications)<-levels(complications$Measure.Name)
+    #   colnames(new_complications)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   for(i in rownames(new_complications)){
+    #     for(j in colnames(new_complications)){
+    #       new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
+    #     }
+    #   }
+    #   new_complications<-new_complications[,-4]
+    #   new_complications<-apply(new_complications,2,order)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   averageNYCperformance<-rep(6,ncol(new_complications))
+    #   new_complications=rbind(new_complications,averageNYCperformance)
+    #   
+    #   # Spider for MOUNT SINAI HOSPITAL
+    #   MOUNT_SINAI_HOSPITAL<-new_complications["MOUNT SINAI HOSPITAL",]
+    #   MOUNT_SINAI_HOSPITAL=as.data.frame(rbind(rep(11,10) , rep(0,10) , MOUNT_SINAI_HOSPITAL))
+    #   radarchart( MOUNT_SINAI_HOSPITAL , axistype=1 , 
+    #               
+    #               #custom polygon
+    #               pcol=rgb(0.5,0.6,1,0.9) , pfcol=rgb(0.5,0.8,1,0.5) , plwd=2 , 
+    #               
+    #               #custom the grid
+    #               cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
+    #               
+    #               title = "MOUNT SINAI HOSPITAL COMPLICATIONS PERFORMANCE",
+    #               
+    #               vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
+    #               
+    #               #custom labels
+    #               vlcex=0.4 
+    #   )
+    #   legend(0.9,1.2,
+    #          legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
+    #          bty = "n",cex = 0.7)
+    #   
+    # })
+    # 
+    # output$radarPlot8 <- renderPlot({
+    #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
+    #   colnames(new_complications)<-levels(complications$Measure.Name)
+    #   colnames(new_complications)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   for(i in rownames(new_complications)){
+    #     for(j in colnames(new_complications)){
+    #       new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
+    #     }
+    #   }
+    #   new_complications<-new_complications[,-4]
+    #   new_complications<-apply(new_complications,2,order)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   averageNYCperformance<-rep(6,ncol(new_complications))
+    #   new_complications=rbind(new_complications,averageNYCperformance)
+    #   
+    #   # Spider for N Y EYE AND EAR INFIRMARY
+    #   EYE_EAR_INFIRMARY<-new_complications["N Y EYE AND EAR INFIRMARY",]
+    #   EYE_EAR_INFIRMARY=as.data.frame(rbind(rep(11,10) , rep(0,10) , EYE_EAR_INFIRMARY))
+    #   radarchart( EYE_EAR_INFIRMARY , axistype=1 , 
+    #               
+    #               #custom polygon
+    #               pcol=rgb(0.1,0,0.9,0.9) , pfcol=rgb(0.1,0.2,1,0.5) , plwd=2 , 
+    #               
+    #               #custom the grid
+    #               cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
+    #               
+    #               title = "New York EYE & EAR INFIRMARY COMPLICATIONS PERFORMANCE",
+    #               
+    #               vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
+    #               
+    #               #custom labels
+    #               vlcex=0.4 
+    #   )
+    #   legend(0.9,1.2,
+    #          legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
+    #          bty = "n",cex = 0.7)
+    #   
+    # })
+    # 
+    # output$radarPlot9 <- renderPlot({
+    #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
+    #   colnames(new_complications)<-levels(complications$Measure.Name)
+    #   colnames(new_complications)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   for(i in rownames(new_complications)){
+    #     for(j in colnames(new_complications)){
+    #       new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
+    #     }
+    #   }
+    #   new_complications<-new_complications[,-4]
+    #   new_complications<-apply(new_complications,2,order)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   averageNYCperformance<-rep(6,ncol(new_complications))
+    #   new_complications=rbind(new_complications,averageNYCperformance)
+    #   
+    #   # Spider for NEW YORK-PRESBYTERIAN HOSPITAL
+    #   NEW_YORK_PRESBYTERIAN_HOSPITAL<-new_complications["NEW YORK-PRESBYTERIAN HOSPITAL",]
+    #   NEW_YORK_PRESBYTERIAN_HOSPITAL=as.data.frame(rbind(rep(11,10) , rep(0,10) , NEW_YORK_PRESBYTERIAN_HOSPITAL))
+    #   radarchart( NEW_YORK_PRESBYTERIAN_HOSPITAL , axistype=1 , 
+    #               
+    #               #custom polygon
+    #               pcol=rgb(0.1,0,0.1,0.9) , pfcol=rgb(0.1,0,0.3,0.5) , plwd=2 , 
+    #               
+    #               #custom the grid
+    #               cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
+    #               
+    #               title = "NEW YORK PRESBYTERIAN HOSPITAL COMPLICATIONS PERFORMANCE",
+    #               
+    #               vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
+    #               
+    #               #custom labels
+    #               vlcex=0.4 
+    #   )
+    #   legend(0.9,1.2,
+    #          legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
+    #          bty = "n",cex = 0.7)
+    #   
+    #   
+    # })
+    # 
+    # output$radarPlot10 <- renderPlot({
+    #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
+    #   colnames(new_complications)<-levels(complications$Measure.Name)
+    #   colnames(new_complications)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   for(i in rownames(new_complications)){
+    #     for(j in colnames(new_complications)){
+    #       new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
+    #     }
+    #   }
+    #   new_complications<-new_complications[,-4]
+    #   new_complications<-apply(new_complications,2,order)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   averageNYCperformance<-rep(6,ncol(new_complications))
+    #   new_complications=rbind(new_complications,averageNYCperformance)
+    #   
+    #   # Spider for NYU HOSPITALS CENTER
+    #   NYU_HOSPITALS_CENTER<-new_complications["NYU HOSPITALS CENTER",]
+    #   NYU_HOSPITALS_CENTER=as.data.frame(rbind(rep(11,10) , rep(0,10) , NYU_HOSPITALS_CENTER))
+    #   radarchart(NYU_HOSPITALS_CENTER, axistype=1 , 
+    #              
+    #              #custom polygon
+    #              pcol=rgb(0,0.4,0.3,0.9) , pfcol=rgb(0,0.1,0.4,0.5) , plwd=2 , 
+    #              
+    #              #custom the grid
+    #              cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
+    #              
+    #              title = "NYU HOSPITALS CENTER COMPLICATIONS PERFORMANCE",
+    #              
+    #              vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
+    #              
+    #              #custom labels
+    #              vlcex=0.4 
+    #   )
+    #   legend(0.9,1.2,
+    #          legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
+    #          bty = "n",cex = 0.7)
+    #   
+    #   
+    # })
+    # 
+    # output$radarPlot11 <- renderPlot({
+    #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
+    #   colnames(new_complications)<-levels(complications$Measure.Name)
+    #   colnames(new_complications)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   for(i in rownames(new_complications)){
+    #     for(j in colnames(new_complications)){
+    #       new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
+    #     }
+    #   }
+    #   new_complications<-new_complications[,-4]
+    #   new_complications<-apply(new_complications,2,order)
+    #   rownames(new_complications)<-levels(complications$Hospital.Name)
+    #   averageNYCperformance<-rep(6,ncol(new_complications))
+    #   new_complications=rbind(new_complications,averageNYCperformance)
+    #   
+    #   # Spider for ST LUKE'S ROOSEVELT HOSPITAL
+    #   ST_LUKE_ROOSEVELT_HOSPITAL<-new_complications["ST LUKE'S ROOSEVELT HOSPITAL",]
+    #   ST_LUKE_ROOSEVELT_HOSPITAL=as.data.frame(rbind(rep(11,10) , rep(0,10) , ST_LUKE_ROOSEVELT_HOSPITAL))
+    #   radarchart(ST_LUKE_ROOSEVELT_HOSPITAL, axistype=1 , 
+    #              
+    #              #custom polygon
+    #              pcol=rgb(0.5,0.1,0.6,0.9) , pfcol=rgb(0.5,0,0.1,0.5) , plwd=2 , 
+    #              
+    #              #custom the grid
+    #              cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
+    #              
+    #              title = "ST LUKE'S ROOSEVELT HOSPITAL COMPLICATIONS PERFORMANCE",
+    #              
+    #              vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
+    #              
+    #              #custom labels
+    #              vlcex=0.4 
+    #   )
+    #   
+    #   legend(0.9,1.2,
+    #          legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
+    #          bty = "n",cex = 0.7)
+    #   
+    # })
     
-    output$radarPlot1 <- renderPlot({
-      new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
-      colnames(new_complications)<-levels(complications$Measure.Name)
-      colnames(new_complications)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      for(i in rownames(new_complications)){
-        for(j in colnames(new_complications)){
-          new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
-        }
-      }
-      new_complications<-new_complications[,-4]
-      new_complications<-apply(new_complications,2,order)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      averageNYCperformance<-rep(6,ncol(new_complications))
-      new_complications=rbind(new_complications,averageNYCperformance)
+    output$radarplot <- renderPlot({
       
-      BELLEVUE_HOSPITAL_CENTER<-new_complications["BELLEVUE HOSPITAL CENTER",]
-      BELLEVUE_HOSPITAL_CENTER=as.data.frame(rbind(rep(11,10) , rep(0,10) , BELLEVUE_HOSPITAL_CENTER))
-      
-     radarchart( BELLEVUE_HOSPITAL_CENTER  , axistype=1 , 
-                      
-                      #custom polygon
-                      pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=2 , 
-                      
-                      #custom the grid
-                      cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
-                      
-                      title = "BELLEVUE HOSPITAL CENTER COMPLICATIONS PERFORMANCE",
-                      vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
-                      #custom labels
-                      vlcex=0.4 
-      )
-      legend(0.9,1.2,
-             legend=c("0-3:Best Performance","3-6:Below Average","6-9:Above Average","9-12:Worse Performance"),text.col="black",
-             bty = "n",cex = 0.7)
-    })
-    
-    output$radarPlot2 <- renderPlot({
-      new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
-      colnames(new_complications)<-levels(complications$Measure.Name)
-      colnames(new_complications)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      for(i in rownames(new_complications)){
-        for(j in colnames(new_complications)){
-          new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
-        }
-      }
-      new_complications<-new_complications[,-4]
-      new_complications<-apply(new_complications,2,order)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      averageNYCperformance<-rep(6,ncol(new_complications))
-      new_complications=rbind(new_complications,averageNYCperformance)
-      
-      #Spider for HARLEM HOSPITAL CENTER
-      HARLEM_HOSPITAL_CENTER<-new_complications["HARLEM HOSPITAL CENTER",]
-      HARLEM_HOSPITAL_CENTER=as.data.frame(rbind(rep(11,10) , rep(0,10) , HARLEM_HOSPITAL_CENTER))
-      radarchart( HARLEM_HOSPITAL_CENTER  , axistype=1 , 
-                  
-                  #custom polygon
-                  pcol=rgb(0.9,0.6,0.5,0.9) , pfcol=rgb(0.7,0.5,0.5,0.5) , plwd=2 , 
-                  
-                  #custom the grid
-                  cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
-                  
-                  title = "HARLEM HOSPITAL CENTER COMPLICATIONS PERFORMANCE",
-                  
-                  vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
-                  
-                  #custom labels
-                  vlcex=0.4 
-      )
-      legend(0.9,1.2,
-             legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
-             bty = "n",cex = 0.7)
-      
-    })
-    
-    output$radarPlot3 <- renderPlot({
-      new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
-      colnames(new_complications)<-levels(complications$Measure.Name)
-      colnames(new_complications)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      for(i in rownames(new_complications)){
-        for(j in colnames(new_complications)){
-          new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
-        }
-      }
-      new_complications<-new_complications[,-4]
-      new_complications<-apply(new_complications,2,order)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      averageNYCperformance<-rep(6,ncol(new_complications))
-      new_complications=rbind(new_complications,averageNYCperformance)
-      
-      HOSPITAL_FOR_SPECIAL_SURGERY<-new_complications["HOSPITAL FOR SPECIAL SURGERY",]
-      HOSPITAL_FOR_SPECIAL_SURGERY=as.data.frame(rbind(rep(11,10) , rep(0,10) , HOSPITAL_FOR_SPECIAL_SURGERY))
-      radarchart( HOSPITAL_FOR_SPECIAL_SURGERY  , axistype=1 , 
-                  
-                  #custom polygon
-                  pcol=rgb(0.2,0.3,0.5,0.9) , pfcol=rgb(0.2,0.2,0.5,0.5) , plwd=2 , 
-                  
-                  #custom the grid
-                  cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
-                  
-                  title = "HARLEM HOSPITAL CENTER COMPLICATIONS PERFORMANCE",
-                  
-                  vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
-                  
-                  #custom labels
-                  vlcex=0.4 
-      )
-      legend(0.9,1.2,
-             legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
-             bty = "n",cex = 0.7)
-      
-    })
-    
-    output$radarPlot4 <- renderPlot({
-      new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
-      colnames(new_complications)<-levels(complications$Measure.Name)
-      colnames(new_complications)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      for(i in rownames(new_complications)){
-        for(j in colnames(new_complications)){
-          new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
-        }
-      }
-      new_complications<-new_complications[,-4]
-      new_complications<-apply(new_complications,2,order)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      averageNYCperformance<-rep(6,ncol(new_complications))
-      new_complications=rbind(new_complications,averageNYCperformance)
-      
-      LENOX_HILL_HOSPITAL<-new_complications["LENOX HILL HOSPITAL",]
-      LENOX_HILL_HOSPITAL=as.data.frame(rbind(rep(11,10) , rep(0,10) , LENOX_HILL_HOSPITAL))
-      radarchart( LENOX_HILL_HOSPITAL , axistype=1 , 
-                  
-                  #custom polygon
-                  pcol=rgb(0.9,0.8,0.5,0.9) , pfcol=rgb(0.9,0.8,0.6,0.5) , plwd=2 , 
-                  
-                  #custom the grid
-                  cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
-                  
-                  title = "LENOX HILL HOSPITAL COMPLICATIONS PERFORMANCE",
-                  
-                  vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
-                  
-                  #custom labels
-                  vlcex=0.4 
-      )
-      legend(0.9,1.2,
-             legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
-             bty = "n",cex = 0.7)
-      
-    })
-    
-    output$radarPlot5 <- renderPlot({
-      new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
-      colnames(new_complications)<-levels(complications$Measure.Name)
-      colnames(new_complications)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      for(i in rownames(new_complications)){
-        for(j in colnames(new_complications)){
-          new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
-        }
-      }
-      new_complications<-new_complications[,-4]
-      new_complications<-apply(new_complications,2,order)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      averageNYCperformance<-rep(6,ncol(new_complications))
-      new_complications=rbind(new_complications,averageNYCperformance)
-      
-      # Spider for METROPOLITAN HOSPITAL CENTER
-      METROPOLITAN_HOSPITAL_CENTER<-new_complications["METROPOLITAN HOSPITAL CENTER",]
-      METROPOLITAN_HOSPITAL_CENTER=as.data.frame(rbind(rep(11,10) , rep(0,10) , METROPOLITAN_HOSPITAL_CENTER))
-      radarchart( METROPOLITAN_HOSPITAL_CENTER , axistype=1 , 
-                  
-                  #custom polygon
-                  pcol=rgb(0.9,0.6,1,0.9) , pfcol=rgb(0.9,0.8,0.9,0.5) , plwd=2 , 
-                  
-                  #custom the grid
-                  cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
-                  
-                  title = "METROPOLITAN HOSPITAL CENTER COMPLICATIONS PERFORMANCE",
-                  
-                  vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
-                  
-                  #custom labels
-                  vlcex=0.4 
-      )
-      legend(0.9,1.2,
-             legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
-             bty = "n",cex = 0.7)
-      
-      
-      
-    })
-    
-    output$radarPlot6 <- renderPlot({
-      new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
-      colnames(new_complications)<-levels(complications$Measure.Name)
-      colnames(new_complications)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      for(i in rownames(new_complications)){
-        for(j in colnames(new_complications)){
-          new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
-        }
-      }
-      new_complications<-new_complications[,-4]
-      new_complications<-apply(new_complications,2,order)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      averageNYCperformance<-rep(6,ncol(new_complications))
-      new_complications=rbind(new_complications,averageNYCperformance)
-      
-      # Spider for MOUNT SINAI BETH ISRAEL/PETRIE CAMPUS
-      MOUNT_SINAI_BETH_ISRAELPETRIE_CAMPUS<-new_complications["MOUNT SINAI BETH ISRAEL/PETRIE CAMPUS",]
-      MOUNT_SINAI_BETH_ISRAELPETRIE_CAMPUS=as.data.frame(rbind(rep(11,10) , rep(0,10) , MOUNT_SINAI_BETH_ISRAELPETRIE_CAMPUS))
-      radarchart( MOUNT_SINAI_BETH_ISRAELPETRIE_CAMPUS , axistype=1 , 
-                  
-                  #custom polygon
-                  pcol=rgb(0.6,0.2,0.4,0.9) , pfcol=rgb(0.6,0.2,0.2,0.5) , plwd=2 , 
-                  
-                  #custom the grid
-                  cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
-                  
-                  title = "METROPOLITAN HOSPITAL CENTER COMPLICATIONS PERFORMANCE",
-                  
-                  vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
-                  
-                  #custom labels
-                  vlcex=0.4 
-      )
-      legend(0.9,1.2,
-             legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
-             bty = "n",cex = 0.7)
-      
-      
-    })
-    
-    output$radarPlot7 <- renderPlot({
-      new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
-      colnames(new_complications)<-levels(complications$Measure.Name)
-      colnames(new_complications)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      for(i in rownames(new_complications)){
-        for(j in colnames(new_complications)){
-          new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
-        }
-      }
-      new_complications<-new_complications[,-4]
-      new_complications<-apply(new_complications,2,order)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      averageNYCperformance<-rep(6,ncol(new_complications))
-      new_complications=rbind(new_complications,averageNYCperformance)
-      
-      # Spider for MOUNT SINAI HOSPITAL
-      MOUNT_SINAI_HOSPITAL<-new_complications["MOUNT SINAI HOSPITAL",]
-      MOUNT_SINAI_HOSPITAL=as.data.frame(rbind(rep(11,10) , rep(0,10) , MOUNT_SINAI_HOSPITAL))
-      radarchart( MOUNT_SINAI_HOSPITAL , axistype=1 , 
-                  
-                  #custom polygon
-                  pcol=rgb(0.5,0.6,1,0.9) , pfcol=rgb(0.5,0.8,1,0.5) , plwd=2 , 
-                  
-                  #custom the grid
-                  cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
-                  
-                  title = "MOUNT SINAI HOSPITAL COMPLICATIONS PERFORMANCE",
-                  
-                  vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
-                  
-                  #custom labels
-                  vlcex=0.4 
-      )
-      legend(0.9,1.2,
-             legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
-             bty = "n",cex = 0.7)
-      
-    })
-    
-    output$radarPlot8 <- renderPlot({
-      new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
-      colnames(new_complications)<-levels(complications$Measure.Name)
-      colnames(new_complications)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      for(i in rownames(new_complications)){
-        for(j in colnames(new_complications)){
-          new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
-        }
-      }
-      new_complications<-new_complications[,-4]
-      new_complications<-apply(new_complications,2,order)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      averageNYCperformance<-rep(6,ncol(new_complications))
-      new_complications=rbind(new_complications,averageNYCperformance)
-      
-      # Spider for N Y EYE AND EAR INFIRMARY
-      EYE_EAR_INFIRMARY<-new_complications["N Y EYE AND EAR INFIRMARY",]
-      EYE_EAR_INFIRMARY=as.data.frame(rbind(rep(11,10) , rep(0,10) , EYE_EAR_INFIRMARY))
-      radarchart( EYE_EAR_INFIRMARY , axistype=1 , 
-                  
-                  #custom polygon
-                  pcol=rgb(0.1,0,0.9,0.9) , pfcol=rgb(0.1,0.2,1,0.5) , plwd=2 , 
-                  
-                  #custom the grid
-                  cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
-                  
-                  title = "New York EYE & EAR INFIRMARY COMPLICATIONS PERFORMANCE",
-                  
-                  vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
-                  
-                  #custom labels
-                  vlcex=0.4 
-      )
-      legend(0.9,1.2,
-             legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
-             bty = "n",cex = 0.7)
-      
-    })
-    
-    output$radarPlot9 <- renderPlot({
-      new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
-      colnames(new_complications)<-levels(complications$Measure.Name)
-      colnames(new_complications)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      for(i in rownames(new_complications)){
-        for(j in colnames(new_complications)){
-          new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
-        }
-      }
-      new_complications<-new_complications[,-4]
-      new_complications<-apply(new_complications,2,order)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      averageNYCperformance<-rep(6,ncol(new_complications))
-      new_complications=rbind(new_complications,averageNYCperformance)
-      
-      # Spider for NEW YORK-PRESBYTERIAN HOSPITAL
-      NEW_YORK_PRESBYTERIAN_HOSPITAL<-new_complications["NEW YORK-PRESBYTERIAN HOSPITAL",]
-      NEW_YORK_PRESBYTERIAN_HOSPITAL=as.data.frame(rbind(rep(11,10) , rep(0,10) , NEW_YORK_PRESBYTERIAN_HOSPITAL))
-      radarchart( NEW_YORK_PRESBYTERIAN_HOSPITAL , axistype=1 , 
-                  
-                  #custom polygon
-                  pcol=rgb(0.1,0,0.1,0.9) , pfcol=rgb(0.1,0,0.3,0.5) , plwd=2 , 
-                  
-                  #custom the grid
-                  cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
-                  
-                  title = "NEW YORK PRESBYTERIAN HOSPITAL COMPLICATIONS PERFORMANCE",
-                  
-                  vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
-                  
-                  #custom labels
-                  vlcex=0.4 
-      )
-      legend(0.9,1.2,
-             legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
-             bty = "n",cex = 0.7)
-      
-      
-    })
-    
-    output$radarPlot10 <- renderPlot({
-      new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
-      colnames(new_complications)<-levels(complications$Measure.Name)
-      colnames(new_complications)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      for(i in rownames(new_complications)){
-        for(j in colnames(new_complications)){
-          new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
-        }
-      }
-      new_complications<-new_complications[,-4]
-      new_complications<-apply(new_complications,2,order)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      averageNYCperformance<-rep(6,ncol(new_complications))
-      new_complications=rbind(new_complications,averageNYCperformance)
-      
-      # Spider for NYU HOSPITALS CENTER
-      NYU_HOSPITALS_CENTER<-new_complications["NYU HOSPITALS CENTER",]
-      NYU_HOSPITALS_CENTER=as.data.frame(rbind(rep(11,10) , rep(0,10) , NYU_HOSPITALS_CENTER))
-      radarchart(NYU_HOSPITALS_CENTER, axistype=1 , 
-                 
-                 #custom polygon
-                 pcol=rgb(0,0.4,0.3,0.9) , pfcol=rgb(0,0.1,0.4,0.5) , plwd=2 , 
-                 
-                 #custom the grid
-                 cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
-                 
-                 title = "NYU HOSPITALS CENTER COMPLICATIONS PERFORMANCE",
-                 
-                 vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
-                 
-                 #custom labels
-                 vlcex=0.4 
-      )
-      legend(0.9,1.2,
-             legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
-             bty = "n",cex = 0.7)
-      
-      
-    })
-    
-    output$radarPlot11 <- renderPlot({
+      # Render a barplot
       new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
       colnames(new_complications)<-levels(complications$Measure.Name)
       colnames(new_complications)
@@ -635,10 +678,25 @@ shinyServer(function(input, output) {
       legend(0.9,1.2,
              legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
              bty = "n",cex = 0.7)
-      
     })
     
+    datasetInput <- reactive({
+      switch(input$new_complications,
+             "A wound that splits open  after surgery on the abdomen or pelvis" = ,
+             "Accidental cuts and tears from medical treatment" =  ,
+             "Blood stream infection after surgery" = ,
+             "Collapsed lung due to medical treatment" = ,
+             "Deaths among Patients with Serious Treatable Complications after Surgery" = ,
+             "Infections from a large venous catheter" = ,
+             "Pressure sores" = ,
+             "Rate of complications for hip/knee replacement patients" = ,
+             "Serious blood clots after surgery" = ,
+             "Serious complications" = )
+    })
     
+    output$hospital <- renderTable({
+      datasetInput()
+    })
   })
     
     

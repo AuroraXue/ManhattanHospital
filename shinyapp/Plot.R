@@ -261,3 +261,7 @@ radarchart(ST_LUKE_ROOSEVELT_HOSPITAL, axistype=1 ,
 legend(0.9,1.2,
        legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
        bty = "n",cex = 0.7)
+
+
+#####################find the hospital#############
+

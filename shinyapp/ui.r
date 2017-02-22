@@ -57,15 +57,17 @@ shinyUI(navbarPage("Hospital New York",theme = shinytheme("cerulean"),
                    tabPanel("Spider",titlePanel(h2("Spider")),
                             sidebarLayout(
                               sidebarPanel(
-                                checkboxGroupInput("What U care about",
+                                selectInput("What U care about",
                                                    h4("What you care about"),
-                                                   choices = colnames(new_complications))),
+                                                   choices = colnames(new_complications),
+                                            hr())),
                               mainPanel(
                                 tabsetPanel(type = "tabs", selected = "Info",
-                                            tabPanel("Hospital Info", leafletOutput("nyc_map")),
-                                            #Radar plot   tabPanel("Radar Plot",leafletOutput())
+                                            tabPanel("Most suitable Hospital",h4("Most suitable Hospital"),
+                                                     tableOutput("hospital")),
+                                        
                                             tabPanel('Radar Plot', h3("Radar Plot"),
-                                              plotOutput('radarPlot')
+                                              plotOutput('radarplot')
                                             )
                                                      
                                                      
