@@ -1,0 +1,125 @@
+---
+title: "Untitled"
+author: "Boya Zhao, bz2294"
+date: "2/21/2017"
+output: pdf_document
+---
+
+
+```{r}
+setwd("~/Desktop/sem 2/Applied data science/Spr2017-proj2-grp9/data")
+Doc <- read.csv("Physician_NYC.csv")
+Doc$Name <- paste(Doc$First.Name, Doc$Last.Name)
+Doc <- Doc[order(Doc$Name), ]
+name_list <- as.character(unique(Doc$Name))
+l <- numeric(length(name_list))
+for (i in 1:length(name_list)) {
+  n <- which(Doc$Name == name_list[i])
+  l[i] <- n[1]
+}
+Doc <- Doc[l, ]
+man_hos <- read.csv("manhattan_hospital_basic_update.csv")
+
+hospital_code <- c(330204, 330240, 330270, 330119, 330199, 330169, 330024, 330100, 330101, 330214, 330387, 330046)
+doc_hos <- list()
+for (i in 1:length(hospital_code)) {
+  doc_hos[[i]] <- which(Doc$Hospital.affiliation.CCN.1 == hospital_code[i] | Doc$Hospital.affiliation.CCN.2 == hospital_code[i]| Doc$Hospital.affiliation.CCN.3 == hospital_code[i])
+}
+hospital <- levels(man_hos$Hospital.Name)
+BELLEVUE_HOSPITAL_CENTER <- Doc[doc_hos[[1]], ]
+HARLEM_HOSPITAL_CENTER <- Doc[doc_hos[[2]], ]
+HOSPITAL_FOR_SPECIAL_SURGERY <- Doc[doc_hos[[3]], ]
+LENOX_HILL_HOSPITAL <- Doc[doc_hos[[4]], ]
+METROPOLITAN_HOSPITAL_CENTER <- Doc[doc_hos[[5]], ]
+MOUNT_SINAI_BETH_ISRAEL_PETRIE_CAMPUS <- Doc[doc_hos[[6]], ]
+MOUNT_SINAI_HOSPITAL <- Doc[doc_hos[[7]], ]
+N_Y_EYE_AND_EAR_INFIRMARY <- Doc[doc_hos[[8]], ]
+NEW_YORK_PRESBYTERIAN_HOSPITAL <- Doc[doc_hos[[9]], ]
+ikNYU_HOSPITALS_CENTER <- Doc[doc_hos[[10]], ]
+ROCKEFELLER_UNIVERSITY_HOSPITAL <- Doc[doc_hos[[11]], ]
+ST_LUKE_S_ROOSEVELT_HOSPITAL <- Doc[doc_hos[[12]], ]
+
+write.csv(BELLEVUE_HOSPITAL_CENTER, file = "BELLEVUE_HOSPITAL_CENTER.csv")
+write.csv(HARLEM_HOSPITAL_CENTER, file = "HARLEM_HOSPITAL_CENTER.csv")
+write.csv(HOSPITAL_FOR_SPECIAL_SURGERY, file = "HOSPITAL_FOR_SPECIAL_SURGERY.csv")
+write.csv(LENOX_HILL_HOSPITAL, file = "LENOX_HILL_HOSPITAL.csv")
+write.csv(METROPOLITAN_HOSPITAL_CENTER, file = "METROPOLITAN_HOSPITAL_CENTER.csv")
+write.csv(MOUNT_SINAI_BETH_ISRAEL_PETRIE_CAMPUS, file = "MOUNT_SINAI_BETH_ISRAEL_PETRIE_CAMPUS.csv")
+write.csv(MOUNT_SINAI_HOSPITAL, file = "MOUNT_SINAI_HOSPITAL.csv")
+write.csv(N_Y_EYE_AND_EAR_INFIRMARY, file = "N_Y_EYE_AND_EAR_INFIRMARY.csv")
+write.csv(NEW_YORK_PRESBYTERIAN_HOSPITAL, file = "NEW_YORK_PRESBYTERIAN_HOSPITAL.csv")
+write.csv(ikNYU_HOSPITALS_CENTER, file = "ikNYU_HOSPITALS_CENTER.csv")
+write.csv(ROCKEFELLER_UNIVERSITY_HOSPITAL, file = "ROCKEFELLER_UNIVERSITY_HOSPITAL.csv")
+write.csv(ST_LUKE_S_ROOSEVELT_HOSPITAL, file = "ST_LUKE_S_ROOSEVELT_HOSPITAL")
+```
+
+```{r}
+unique(BELLEVUE_HOSPITAL_CENTER$Secondary.specialty.1)
+unique(Doc$Primary.specialty)
+rank <- read.csv("medical_school_ranking.csv")
+#spec <- c("VASCULAR SURGERY", "GENERAL SURGERY", "ALLERGY/IMMUNOLOGY", "PULMONARY DISEASE", "INFECTIOUS DISEASE", "HAND SURGERY", "THORACIC SURGERY", "PLASTIC AND RECONSTRUCTIVE SURGERY", "PERIPHERAL VASCULAR DISEASE", "COLORECTAL SURGERY"; "ORAL SURGERY", "CARDIAC SURGERY", "NEUROSURGERY")
+# input <- "VASCULAR SURGERY"
+# data <- subset(BELLEVUE_HOSPITAL_CENTER, Primary.specialty == input)
+doc_score <- function(data) {
+  s1 <- numeric(nrow(data))
+  s1[data$Professional.accepts.Medicare.Assignment == "Y"] <- 1
+  s1[data$Professional.accepts.Medicare.Assignment == "M"] <- 0.5
+  s2 <- numeric(nrow(data))
+  s2[data$Reported.Quality.Measures == "Y"] <- 1
+  s3 <- numeric(nrow(data))
+  s3[data$Used.electronic.health.records == "Y"] <- 1
+  s4 <- numeric(nrow(data))
+  s4[data$Credential == "DC" | data$Credential == "DDS" | data$Credential == "DO" | data$Credential ==  "DPM" | data$Credential ==  "MD" | data$Credential ==  "OD"] <- 1
+  s4[data$Credential == "CNS" | data$Credential == "PSY" | data$Credential == "CSW"] <- 0.9
+  s4[data$Credential == "MNT" | data$Credential == "OT" | data$Credential == "PT"] <- 0.8
+  s4[data$Credential == "AU" | data$Credential == "PA"] <- 0.7
+  s4[data$Credential == "NP" | data$Credential == "CNM" | data$Credential == "CNA" | data$Credential == "CP"] <- 0.6
+  s4[data$Credential == "AA"] <- 0.5
+  s4[s4 == 0] <- 0.4
+  s5 <- numeric(nrow(data))
+  school <- as.character(unique(rank$school.name))
+  for (i in 1:length(school)) {
+    s5[data$Medical.school.name == school[i]] <- 0.5 + (length(school) - i + 1) / length(school) / 2
+  }
+  s5[s5 == 0] <- 0.5
+  s6 <- numeric(nrow(data))
+  year <- sort(unique(Doc$Graduation.year))
+  for (i in 1:length(year)) {
+    s6[data$Graduation.year == year[i]] <- (2017-year[i])/(2017-year[1])/2 + 0.5
+  }
+  s6[s6 == 0] <- 0.5
+  data$score <- s1 * 0.06 + s2 * 0.1 + s3 * 0.04 + s4 * 0.25 + s5 * 0.25 + s6 * 0.3
+  return(data)
+}
+
+score_BELLEVUE_HOSPITAL_CENTER <- doc_score(BELLEVUE_HOSPITAL_CENTER)
+write.csv(score_BELLEVUE_HOSPITAL_CENTER, file = "score_BELLEVUE_HOSPITAL_CENTER.csv")
+score_HARLEM_HOSPITAL_CENTER <- doc_score(HARLEM_HOSPITAL_CENTER)
+write.csv(score_HARLEM_HOSPITAL_CENTER, file = "score_HARLEM_HOSPITAL_CENTER.csv")
+score_HOSPITAL_FOR_SPECIAL_SURGERY <- doc_score(HOSPITAL_FOR_SPECIAL_SURGERY)
+write.csv(score_HOSPITAL_FOR_SPECIAL_SURGERY, file = "score_HOSPITAL_FOR_SPECIAL_SURGERY.csv")
+score_LENOX_HILL_HOSPITAL <- doc_score(LENOX_HILL_HOSPITAL)
+write.csv(score_LENOX_HILL_HOSPITAL, file = "score_LENOX_HILL_HOSPITAL.csv")
+score_METROPOLITAN_HOSPITAL_CENTER <- doc_score(METROPOLITAN_HOSPITAL_CENTER)
+write.csv(score_METROPOLITAN_HOSPITAL_CENTER, file = "score_METROPOLITAN_HOSPITAL_CENTER.csv")
+score_MOUNT_SINAI_BETH_ISRAEL_PETRIE_CAMPUS <- doc_score(MOUNT_SINAI_BETH_ISRAEL_PETRIE_CAMPUS)
+write.csv(score_MOUNT_SINAI_BETH_ISRAEL_PETRIE_CAMPUS, file = "score_MOUNT_SINAI_BETH_ISRAEL_PETRIE_CAMPUS.csv")
+score_MOUNT_SINAI_HOSPITAL <- doc_score(MOUNT_SINAI_HOSPITAL)
+write.csv(score_MOUNT_SINAI_HOSPITAL, file = "score_MOUNT_SINAI_HOSPITAL.csv")
+score_N_Y_EYE_AND_EAR_INFIRMARY <- doc_score(N_Y_EYE_AND_EAR_INFIRMARY)
+write.csv(score_N_Y_EYE_AND_EAR_INFIRMARY, file = "score_N_Y_EYE_AND_EAR_INFIRMARY.csv")
+score_NEW_YORK_PRESBYTERIAN_HOSPITAL <- doc_score(NEW_YORK_PRESBYTERIAN_HOSPITAL)
+write.csv(score_NEW_YORK_PRESBYTERIAN_HOSPITAL, file = "score_NEW_YORK_PRESBYTERIAN_HOSPITAL.csv")
+score_ikNYU_HOSPITALS_CENTER <- doc_score(ikNYU_HOSPITALS_CENTER)
+write.csv(score_ikNYU_HOSPITALS_CENTER, file = "score_ikNYU_HOSPITALS_CENTER.csv")
+score_ROCKEFELLER_UNIVERSITY_HOSPITAL <- doc_score(ROCKEFELLER_UNIVERSITY_HOSPITAL)
+write.csv(score_ROCKEFELLER_UNIVERSITY_HOSPITAL, file = "score_ROCKEFELLER_UNIVERSITY_HOSPITAL.csv")
+#score_ST_LUKE_S_ROOSEVELT_HOSPITAL <- doc_score(ST_LUKE_S_ROOSEVELT_HOSPITAL)
+#write.csv(score_ST_LUKE_S_ROOSEVELT_HOSPITAL, file = "score_ST_LUKE_S_ROOSEVELT_HOSPITAL.csv")
+
+
+```
+
+
+
+
