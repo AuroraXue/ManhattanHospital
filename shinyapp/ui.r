@@ -53,29 +53,30 @@ shinyUI(navbarPage("Hospital New York",theme = shinytheme("cerulean"),
                                 )
                               )
  
-                   )),
-                   tabPanel("Spider",titlePanel(h2("Spider")),
-                            sidebarLayout(
-                              sidebarPanel(
-                                selectInput("What U care about",
-                                                   h4("What you care about"),
-                                                   choices = colnames(new_complications),
-                                            hr())),
-                              mainPanel(
-                                tabsetPanel(type = "tabs", selected = "Info",
-                                            tabPanel("Most suitable Hospital",h4("Most suitable Hospital"),
-                                                     tableOutput("hospital")),
-                                        
-                                            tabPanel('Radar Plot', h3("Radar Plot"),
-                                              plotOutput('radarplot')
-                                            )
-                                                     
-                                                     
-                                                     
-                                            )
-                                )
-                                
-                              )))
+                   ))#,
+                   # tabPanel("Spider",titlePanel(h2("Spider")),
+                   #          sidebarLayout(
+                   #            sidebarPanel(
+                   #              selectInput("What U care about",
+                   #                                 h4("What you care about"),
+                   #                                 choices = colnames(new_complications),
+                   #                          hr())),
+                   #            mainPanel(
+                   #              tabsetPanel(type = "tabs", selected = "Info",
+                   #                          tabPanel("Most suitable Hospital",h4("Most suitable Hospital"),
+                   #                                   tableOutput("hospital")),
+                   #                      
+                   #                          tabPanel('Radar Plot', h3("Radar Plot"),
+                   #                            plotOutput('radarplot')
+                   #                          )
+                   #                                   
+                   #                                   
+                   #                                   
+                   #                          )
+                   #              )
+                   #              
+                   #            ))
+                   )
                    
  )
                            
