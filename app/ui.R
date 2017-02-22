@@ -16,30 +16,25 @@ library("dplyr")
 library("png")
 library("grid")
 # Define UI for application that draws a histogram
- 
 
-shinyUI(navbarPage("Hospital New York",theme = shinytheme("cyborg"),
+
+shinyUI(navbarPage("Hospital New York",theme = shinytheme("cerulean"),
                    tabPanel("Introduction",
                             navlistPanel("Introduction",
                                          tabPanel("Introduction",
                                                   includeMarkdown("introduction.md")),
                                          tabPanel("Contact",
                                                   includeMarkdown("contact.md"))
-                                         )),
-                   tabPanel("Map",
-                            titlePanel(h2("Map")),
-                          # Sidebar with controls to select the variable to plot against mpg
-                         # and to specify whether outliers should be included
-                         leafletOutput("nyc_map",height=600)
-                            ))
-                 #  tabPanel("Hospital Information",titlePanel(h2("Hospital Information")),
-                  #          fluidRow(column(12,DT::dataTableOutput('rawdata')
-                  #          )
-                              
-                    #        )
-                       #     )
-                  )
+                            )),
+                   tabPanel("Map", titlePanel(h2("Map")),
+                            # Sidebar with controls to select the variable to plot against mpg
+                            # and to specify whether outliers should be included
+                            leafletOutput("nyc_map",height=600)
+                   ),
+        
+                  tabPanel("Hospital Information",titlePanel(h2("Hospital Information")),
+                         #  tableOutput("view")
+                         fluidRow(
+                           DT::dataTableOutput('rawdata'))
+                      )))
 
-                   
-                            
-                

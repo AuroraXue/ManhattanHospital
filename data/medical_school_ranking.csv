@@ -1,0 +1,168 @@
+rank,medical.school,university,school.name
+1,Harvard Medical School,Harvard University,HARVARD MEDICAL SCHOOL
+2,UCSF School of Medicine,University of California San Francisco,"UNIVERSITY OF CALIFORNIA, SAN FRANCISCO SCHOOL OF MEDICINE"
+3,Johns Hopkins School of Medicine,Johns Hopkins University,JOHNS HOPKINS UNIVERSITY SCHOOL OF MEDICINE
+4,Perelman School of Medicine,University of Pennsylvania,UNIVERSITY OF PENNSYLVANIA SCHOOL OF MEDICINE
+5,UW School of Medicine,University of Washington,UNIVERSITY OF WASHINGTON SCHOOL OF MEDICINE
+6,David Geffen School of Medicine,University of California Los Angeles,
+7,Michigan Medical School,University of Michigan at Ann Arbor,UNIVERSITY OF MICHIGAN HOMEOPATHIC MEDICAL SCHOOL
+,,,UNIVERSITY OF MICHIGAN MEDICAL SCHOOL
+8,UNC School of Medicine,University of North Carolina Chapel Hill,UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL SCHOOL OF MEDICINE
+9,Pittsburgh School of Medicine,University of Pittsburgh,UNIV OF PITTSBURGH SCHOOL OF DENTAL MEDICINE
+9,,University of Pittsburgh,UNIVERSITY OF PITTSBURGH SCHOOL OF MEDICINE
+10,Stanford School of Medicine,Stanford University,STANFORD UNIVERSITY SCHOOL OF MEDICINE
+11,Pritzker School of Medicine,University of Chicago,"UNIVERSITY OF CHICAGO, PRITZKER SCHOOL OF MEDICINE"
+12,Wash U School of Medicine in St. Louis,Washington University,WASHINGTON UNIVERSITY SCHOOL OF MEDICINE
+13,Mayo Medical School,Mayo Clinic,MAYO MEDICAL SCHOOL
+14,Oregon Health & Science University,Oregon Health and Science University,OREGON HEALTH SCIENCES UNIVERSITY SCHOOL OF MEDICINE
+15,UC San Diego School of Medicine,University of California San Diego,"UNIVERSITY OF CALIFORNIA, SAN DIEGO SCHOOL OF MEDICINE"
+16,Weill Cornell Medical College,Cornell University,CORNELL UNIVERSITY MEDICAL COLLEGE
+17,Vanderbilt School of Medicine,Vanderbilt University,VANDERBILT UNIVERSITY SCHOOL OF MEDICINE
+18,Baylor College of Medicine,Baylor University,BAYLOR COLLEGE OF MEDICINE
+19,University of Wisconsin School of Medicine,University of Wisconsin Madison,UNIVERSITY OF WISCONSIN MEDICAL SCHOOL
+20,University of Minnesota Medical School,University of Minnesota,UNIVERSITY OF MINNESOTA MEDICAL SCHOOL
+20,,University of Minnesota,UNIVERSITY OF MINNESOTA SCHOOL OF DENTISTRY
+21,Geisel School of Medicine,Dartmouth College,DARTMOUTH MEDICAL SCHOOL
+22,Feinberg School of Medicine,Northwestern University,NORTHWESTERN UNIVERSITY MEDICAL SCHOOL
+23,UT Southwestern Medical School,University of Texas Southwestern,UNIVERSITY OF TEXAS SOUTHWESTERN MEDICAL SCHOOL AT DALLAS
+24,Duke School of Medicine,Duke University,DUKE UNIVERSITY SCHOOL OF MEDICINE
+25,Roy J. and Lucille A. Carver College of Medicine,University of Iowa,UNIVERSITY OF IOWA COLLEGE OF MEDICINE
+26,UC Davis School of Medicine,University of California Davis,"UNIVERSITY OF CALIFORNIA, DAVIS SCHOOL OF MEDICINE"
+27,Columbia College of Physicians and Surgeons,Columbia University,COLUMBIA UNIV SCHOOL OF DENTAL & ORAL SURGERY
+27,,Columbia University,COLUMBIA UNIVERSITY COLLEGE OF PHYSICIANS AND SURGEONS
+28,Virginia School of Medicine,University of Virginia Charlottesville,UNIVERSITY OF VIRGINIA SCHOOL OF MEDICINE
+29,Colorado Denver School of Medicine,University of Colorado Denver,UNIVERSITY OF COLORADO SCHOOL OF MEDICINE
+30,Rochester School of Medicine,University of Rochester,UNIVERSITY OF ROCHESTER SCHOOL OF MEDICINE AND DENTISTRY
+31,CWRU School of Medicine,Case Western Reserve University,CASE WESTERN RESERVE UNIVERSITY SCHOOL OF MEDICINE
+32,Yale School of Medicine,Yale University,YALE UNIVERSITY SCHOOL OF MEDICINE
+33,UMASS School of Medicine,University of Massachusetts Worcester,
+34,NYU School of Medicine,New York University,NEW YORK UNIVERSITY COLLEGE OF DENTISTRY
+34,,New York University,NEW YORK UNIVERSITY SCHOOL OF MEDICINE
+34,,New York University,NEW YORK UNIVERSITY MEDICAL COLLEGE - NLG
+35,OSU College of Medicine,Ohio State University,OHIO STATE UNIVERSITY - COLLEGE OF OPTOMETRY
+35,,Ohio State University,OHIO STATE UNIVERSITY COLLEGE OF MEDICINE
+36,Boston University School of Medicine,Boston University,BOSTON UNIV GOLDMAN SCHOOL OF DENTAL MEDICINE
+36,,Boston University,BOSTON UNIVERSITY SCHOOL OF MEDICINE
+37,Emory University School of Medicine,Emory University,EMORY UNIVERSITY SCHOOL OF MEDICINE
+38,Maryland School of Medicine,University of Maryland Baltimore,UNIVERSITY OF MARYLAND SCHOOL OF MEDICINE
+39,Indiana University School of Medicine,Indiana University,INDIANA UNIVERSITY SCHOOL OF MEDICINE
+40,Alabama School of Medicine,University of Alabama at Birmingham,UNIVERSITY OF ALABAMA SCHOOL OF MEDICINE
+41,Icahn School of Medicine at Mount Sinai,Icahn School of Medicine at Mount Sinai,MOUNT SINAI SCHOOL OF MEDICINE OF CITY UNIVERSITY OF NEW YORK
+42,Warren Alpert Medical School,Brown University,BROWN UNIVERSITY PROGRAM IN MEDICINE
+43,Utah School of Medicine,University of Utah,UNIVERSITY OF UTAH SCHOOL OF MEDICINE
+44,University of Nebraska Medical Center,University of Nebraska Omaha,UNIVERSITY OF NEBRASKA COLLEGE OF MEDICINE
+45,Albert Einstein College of Medicine,Yeshiva University,ALBERT EINSTEIN COLLEGE OF MEDICINE OF YESHIVA UNIVERSITY
+46,Kansas School of Medicine,University of Kansas Medical Center,UNIVERSITY OF KANSAS SCHOOL OF MEDICINE
+47,Keck School of Medicine,University of Southern California,UNIVERSITY OF SOUTHERN CALIFORNIA SCHOOL OF MEDICINE
+48,UC Irvine School of Medicine,University of California Irvine,"UNIVERSITY OF CALIFORNIA, IRVINE, CALIFORNIA COLLEGE OF MEDICINE"
+49,Vermont College of Medicine,University of Vermont & St Agric College,UNIVERSITY OF VERMONT COLLEGE OF MEDICINE
+50,Wake Forest University School of Medicine,Wake Forest University,BOWMAN GRAY SCHOOL OF MEDICINE OF WAKE FOREST UNIVERSITY
+51,Medical College of Wisconsin,Medical College of Wisconsin ,MEDICAL COLLEGE OF WISCONSIN
+52,Missouri School of Medicine,University of Missouri - Columbia ,"UNIVERSITY OF MISSOURI, COLUMBIA SCHOOL OF MEDICINE"
+52,,University of Missouri - Columbia ,"UNIVERSITY OF MISSOURI, KANSAS CITY, SCHOOL OF MEDICINE"
+53,UNM School of Medicine,University of New Mexico ,UNIVERSITY OF NEW MEXICO SCHOOL OF MEDICINE
+54,Georgetown School of Medicine,Georgetown University,GEORGETOWN UNIVERSITY OF MEDICINE
+55,University of Florida College of Medicine ,University of Florida ,UNIVERSITY OF FLORIDA COLLEGE OF DENTISTRY
+55,,University of Florida ,UNIVERSITY OF FLORIDA COLLEGE OF MEDICINE
+56,Brody School of Medicine,East Carolina University ,EAST CAROLINA UNIVERSITY SCHOOL OF MEDICINE
+57,University of South Carolina School of Medicine Greenville ,University of South Carolina ,
+58,Sidney Kimmel Medical College ,Thomas Jefferson University ,JEFFERSON MEDICAL COLLEGE OF THOMAS JEFFERSON UNIVERSITY
+59,University of Illinois College of Medicine ,University of Illinois at Chicago ,UNIVERSITY OF ILLINOIS AT CHICAGO HEALTH SCIENCE CENTER
+60,University of Cincinnati Academic Health Center ,University of Cincinnati ,UNIVERSITY OF CINCINNATI COLLEGE OF MEDICINE
+61,Tufts University School of Medicine ,Tufts University,TUFTS UNIVERSITY SCHOOL OF DENTAL MEDICINE 
+61,,Tufts University,TUFTS UNIVERSITY SCHOOL OF MEDICINE
+62,Medical University of South Carolina ,Medical University of South Carolina,UNIVERSITY OF SOUTH CAROLINA SCHOOL OF MEDICINE
+,,,MEDICAL UNIVERSITY OF SOUTH CAROLINA COLLEGE OF MEDICINE
+63,Virginia Commonwealth School of Medicine ,Virginia Commonwealth University,VIRGINIA COMMONWEALTH UNIV SCHOOL OF DENTISTRY
+,,,MEDICAL COLLEGE OF VIRGINIA COMMONWEALTH UNIVERSITY SCHOOL OF MEDICINE
+64,Kentucky School of Medicine,University of Kentucky ,UNIVERSITY OF KENTUCKY COLLEGE OF MEDICINE
+65,Leonard M. Miller School of Medicine ,University of Miami ,UNIVERSITY OF MIAMI SCHOOL OF MEDICINE
+66,Connecticut School of Medicine,University of Connecticut Farmington ,UNIVERSITY OF CONNECTICUT SCHOOL OF MEDICINE
+67,Hofstra North Shore-LIJ School of Medicine ,Hofstra University ,
+68,Uniformed Services University of the Health Sciences ,Uniformed Services University of Health,
+69,Morehouse School of Medicine,Morehouse College ,MOREHOUSE SCHOOL OF MEDICINE
+70,San Antonio School of Medicine,University of Texas San Antonio ,UNIVERSITY OF TEXAS MEDICAL SCHOOL AT SAN ANTONIO
+71,John A. Burns School of Medicine,University of Hawaii at Manoa ,
+72,Temple School of Medicine,Temple University ,TEMPLE UNIVERSITY SCHOOL OF MEDICINE
+73,UT Houston School of Medicine,University of Texas Houston ,UNIVERSITY OF TEXAS MEDICAL SCHOOL AT HOUSTON
+74,Virginia Tech Carilion School of Medicine ,VTC School of Medicine and Research Institute ,
+75,Saint Louis School of Medicine,Saint Louis University ,SAINT LOUIS UNIVERSITY SCHOOL OF MEDICINE
+76,University of Arizona College of Medicine Phoenix ,University of Arizona ,UNIVERSITY OF ARIZONA COLLEGE OF MEDICINE
+77,GW School of Medicine,George Washington University ,GEORGE WASHINGTON UNIVERSITY SCHOOL OF MEDICINE
+78,Stony Brook School of Medicine,State University New York Stony Brook ,"STATE UNIVERSITY OF NEW YORK AT STONY BROOK, SCHOOL OF MEDICINE"
+79,Creighton School of Medicine,Creighton University ,CREIGHTON UNIVERSITY SCHOOL OF MEDICINE
+80,University of Arkansas for Medical Sciences ,University of Arkansas Little Rock ,UNIVERSITY OF ARKANSAS COLLEGE OF MEDICINE
+81,William Beaumont School of Medicine ,Oakland University ,OAKLAND COLLEGE OF MEDICINE AND SURGERY
+82,Cooper Medical School of Rowan University ,Rowan University ,
+83,Michigan State University College of Osteopathic Medicine,Michigan State University ,MICHIGAN STATE UNIVERSITY COLLEGE OF OSTEOPATHIC MEDICINE
+83,,Michigan State University ,MICHIGAN STATE UNIVERSITY COLLEGE OF HUMAN MEDICINE
+84,Eastern Virginia School of Medicine ,Eastern Virginia Medical School ,EASTERN VIRGINIA MEDICAL SCHOOL
+85,Rush Medical College ,Rush University ,RUSH MEDICAL COLLEGE OF RUSH UNIVERSITY
+86,Boonshoft School of Medicine ,Wright State University ,WRIGHT STATE UNIVERSITY SCHOOL OF MEDICINE
+87,Oklahoma College of Medicine,University of Oklahoma Health Sciences Center ,UNIVERSITY OF OKLAHOMA COLLEGE OF MEDICINE
+88,West Virginia School of Medicine,West Virginia University ,WEST VIRGINIA UNIVERSITY SCHOOL OF MEDICINE 
+89,Loyola-Stritch School of Medicine,Loyola University Chicago ,"LOYOLA UNIVERSITY OF CHICAGO, STRITCH SCHOOL OF MEDICINE"
+90,Rutgers New Jersey Medical School ,Rutgers University ,
+91,Tennessee Health Science Center ,University of Tennessee Memphis,UNIVERSITY OF TENNESSEE COLLEGE OF MEDICINE
+92,The Commonwealth Medical College,The Commonwealth Medical College ,
+93,Buffalo School of Medicine,State University of New York at Buffalo,"STATE UN OF NY, BUFFALO SCHOOL OF DENTAL MEDICINE"
+93,,State University of New York at Buffalo,STATE UNIVERSITY OF NEW YORK AT BUFFALO SCHOOL OF MEDICINE
+94,USF Morsani College of Medicine,University of South Florida ,UNIVERSITY OF SOUTH FLORIDA COLLEGE OF MEDICINE
+95,Wayne State School of Medicine ,Wayne State University ,
+96,SUNY Downstate Medical Center ,SUNY Downstate Medical Center ,
+97,Sanford School of Medicine,University of South Dakota ,
+98,Herbert Wertheim College of Medicine ,Florida International University ,
+99,Loma Linda School of Medicine,Loma Linda University ,LOMA LINDA UNIVERSITY SCHOOL OF MEDICINE
+100,Texas A&M Health Science Center,Texas A&M University,TEXAS A & M UNIVERSITY COLLEGE OF MEDICINE
+101,The Charles E. Schmidt College of Medicine,Florida Atlantic University,
+102,Louisville School of Medicine,University of Louisville,UNIVERSITY OF LOUISVILLE SCHOOL OF MEDICINE
+103,Texas Tech School of Medicine,Texas Tech University,TEXAS TECH UNIVERSITY HEALTH SCIENCE CENTER SCHOOL OF MEDICINE
+104,Drexel University College of Medicine,Drexel University,
+105,Penn State Hershey College of Medicine,Pennsylvania State University Hershey,PENNSYLVANIA STATE UNIVERSITY COLLEGE OF MEDICINE
+106,Tulane University School of Medicine,Tulane University of Louisiana,TULANE UNIVERSITY SCHOOL OF MEDICINE
+107,Medical College of Georgia (MCG),Georgia Regents University,
+108,The University of Texas Medical Branch at Galveston,University of Texas Galveston,
+109,Albany School of Medicine,Albany Medical College,ALBANY MEDICAL COLLEGE OF UNION UNIVERSITY 
+110,UC Riverside School of Medicine,University of California Riverside,
+111,Toledo School of Medicine,University of Toledo,
+112,University of Central Florida College of Medicine,University of Central Florida,
+113,Rosalind Franklin University of Medicine,Rosalind Franklin University,
+114,North Dakota School of Medicine,University of North Dakota,UNIVERSITY OF NORTH DAKOTA SCHOOL OF MEDICINE
+115,SUNY Upstate School of Medicine,SUNY Upstate Medical University,
+116,Nevada School of Medicine,University of Nevada Reno,UNIVERSITY OF NEVADA SCHOOL OF MEDICINE
+117,Howard University College of Medicine,Howard University,HOWARD UNIVERSITY COLLEGE OF MEDICINE
+118,Neomed School of Medicine,Northeast Ohio Medical University,NORTHEASTERN OHIO UNIVERSITIES COLLEGE OF MEDICINE
+119,Southern Illinois School of Medicine,Southern Illinois University,SOUTHERN ILLINOIS UNIVERSITY SCHOOL OF MEDICINE
+120,Louisiana State University School of Medicine,Louisiana State University New Orleans,LOUISIANA STATE UNIVERSITY SCHOOL OF MEDICINE IN SHREVEPORT
+121,New York Medical College,New York Medical College,NEW YORK MEDICAL COLLEGE
+121,,New York Medical College,NEW YORK MEDICAL COLLEGE AND HOSPITAL FOR WOMEN
+122,South Alabama School of Medicine,University of South Alabama,UNIVERSITY OF SOUTH ALABAMA COLLEGE OF MEDICINE
+123,James H. Quillen COM,East Tennessee State University,"EAST TENNESSEE STATE UNIVERSITY, QUILLEN-DISHNER COLLEGE OF MEDICINE"
+124,University of Missouri Kansas City School of Medicine,University of Missouri Kansas City,KANSAS CITY UNIVERSITY OF PHYSICIANS AND SURGEONS
+125,Mercer School of Medicine,Mercer University Macon,MERCER UNIVERSITY SCHOOL OF MEDICINE
+126,Joan C. Edwards School of Medicine,Marshall University,MARSHALL UNIVERSITY SCHOOL MEDICINE 
+127,Shreveport School of Medicine,Louisiana State University ,LOUISIANA STATE UNIVERSITY SCHOOL OF MEDICINE IN NEW ORLEANS
+128,Florida State University College of Medicine,Florida State University,
+129,Central Michigan University College of Medicine,Central Michigan University,
+130,Meharry School of Medicine,Meharry Medical College,MEHARRY MEDICAL COLLEGE SCHOOL OF MEDICINE
+131,Frank H. Netter School of Medicine - Quinnipiac University,Quinnipiac University,
+132,San Juan Bautista School of Medicine,San Juan Bautista School of Medicine,
+133,Ponce School of Medicine,Ponce Health Sciences University,PONCE SCHOOL OF MEDICINE
+134,Universidad Central del Caribe School of Medicine,Universidad Central del Caribe,UNIVERSIDAD CENTRAL DEL CARIBE ESCUELA DE MEDICINA 
+135,Puerto Rico School of Medicine,University of Puerto Rico,UNIVERSITY OF PUERTO RICO SCHOOL OF MEDICINE
+135,,University of Puerto Rico,INTERNATIONAL AMERICAN UNIVERSITY AT PUERTO RICO - SCHOOL OF OPTOMETRY
+136,Lake Erie College of Osteopathic Medicine,Lake Erie College of Osteopathic Medicine,LAKE ERIE COLLEGE OF OSTEOPATHIC MEDICINE
+137,Mississippi School of Medicine,University of Mississippi Jackson,UNIVERSITY OF MISSISSIPPI SCHOOL OF MEDICINE
+138,Philadelphia College of Osteopathic Medicine,Philadelphia College,PHILADELPHIA COLLEGE OF OSTEOPATHIC MEDICINE
+139,Pacific Northwest University of Health Sciences,Pacific Northwest University,
+140,Edward VCOM Carolinas Campus,Edward Via College of Osteopathic Medicine,
+141,ATSU - School of Osteopathic Medicine in Arizona,A.T. Still University,"A T STILL UN, ARIZONA SCHL OF DENT.Y & ORAL HLTH"
+142,Ohio University Heritage College of Osteopathic Medicine,Ohio University,OHIO UNIVERSITY OF OSTEO MEDICINE
+143,Western Michigan University Homer Stryker School of Medicine,Western Michigan University,
+144,WesternU College of Osteopathic Medicine of the Pacific,Western University of Health Sciences,"WESTERN UNIV OF HEALTH SCIENCES COL OF DENTAL MED, POMONA CA"
+145,LMU - DeBusk College of Osteopathic Medicine,Lincoln Memorial University,
+146,TUCOM - NV School of Osteopathic Medicine,Touro University - Nevada,
+147,Rocky Vista University College of Osteopathic Medicine,Rock Vista University,
+148,Oklahoma State University College of Osteopathic Medicine,Oklahoma State University,
+149,NYIT College of Osteopathic Medicine,New York Institute of Technology,NEW YORK COLLEGE OF OSTEO MEDICINE OF NEW YORK INSTITUTE OF TECHNOLOGY
+150,UNT Health Science Center,University of North Texas,UNIVERSITY OF NORTH TEXAS HEALTH SCIENCE CENTER AT FORT WORTH

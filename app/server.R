@@ -93,8 +93,18 @@ shinyServer(function(input, output) {
             addMarkers(Manhattan_hospital$lng,Manhattan_hospital$lat,popup=hospital_content))
    
 })
+      datasetInput <- reactive({
+        switch(as.character(Manhattan_hospital[,c(1,2,3)]),
+               "Phone Number" = Phone.Number
+               )
+               
+      })
+      output$rawdata <- DT::renderDataTable(DT::datatable(
+        Manhattan_hospital,
+        options = list(pageLength = 12), rownames = FALSE
+      ))
       
-      output$rawdata <- renderDataTable(
-        Manhattan_hospital, options = list(pageLength = 12), rownames = FALSE
-      )
+      
+      
+   
 })

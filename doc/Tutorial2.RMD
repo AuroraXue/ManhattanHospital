@@ -33,7 +33,7 @@ From NYC open data, we downloaded 2009 housing sales data of Manhattan. `datatab
 
 ```{r load_data}
 mh2009=read.csv(file="../data/ManhattanHousing.csv")
-datatable(sample_n(mh2009, 50))
+datatable(sample_n(mh2009, 50)) # for knitting the Rmarkdown
 ```
 
 ```{r zipcode_proc}
@@ -45,7 +45,7 @@ mh2009=
 
 ## Number of sales 
 ```{r num_sales}
-count.df=mh2009%>%
+count.df=mh2009%>%  # what's this?
   group_by(region)%>%
   summarise(
   value=n()
@@ -53,8 +53,11 @@ count.df=mh2009%>%
 save(count.df, file="../output/count.RData")
 ```
 
-## Visualize using `choroplethr`
+## Visualize using `choroplethr` 
+* having the map! head map, two dimensional data frame, you want to use color to present the value. Here is one dimensinoal dataset.
+
 "A choropleth map (from Greek χώρο ("area/region") + πλήθος ("multitude")) is a thematic map in which areas are shaded or patterned in proportion to the measurement of the statistical variable being displayed on the map, such as population density or per-capita income."
+
 
 ## Install the package. 
 ```{r install_pkgs, eval=F}
@@ -72,6 +75,8 @@ if (!require("ggmap")) devtools::install_github("dkahle/ggmap")
 
 ## 2009 Manhattan housing sales
 ```{r code_plot_housing_sales, message=F, eval=F}
+# eval = F can not be run but can be printed as example
+# for the echo = F means the code can be run but not printed out
 library(choroplethrZip)
 zip_choropleth(count.df,
     title       = "2009 Manhattan housing sales",
@@ -109,6 +114,7 @@ ggmap(get_map("New York, New York",zoom=11,color = "bw")) +
 ```
 ## Plot using longitude and latitude
 ```{r plot_indiv, message=F, warning=F, echo=F}
+install.packages("ggmap")
 library(ggmap)
 ggmap(get_map("New York, New York",zoom=11,color = "bw")) + 
   geom_point(data=mh2009.selgeo, aes(x=lon,y=lat),  color='red') 

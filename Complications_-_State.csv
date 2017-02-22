@@ -1,0 +1,12 @@
+State,Measure Name,Measure ID,Number of Hospitals Worse,Number of Hospitals Same,Number of Hospitals Better,Number of Hospitals Too Few,Footnote,Measure Start Date,Measure End Date
+NY,Rate of complications for hip/knee replacement patients,COMP_HIP_KNEE,1,109,3,35,,04/01/2012,03/31/2015
+NY,Serious complications,PSI_90_SAFETY,20,134,2,Not Available,,07/01/2013,06/30/2015
+NY,Collapsed lung due to medical treatment,PSI_6_IAT_PTX,1,153,0,1,,07/01/2013,06/30/2015
+NY,Serious blood clots after surgery,PSI_12_POSTOP_PULMEMB_DVT,20,126,0,3,,07/01/2013,06/30/2015
+NY,A wound that splits open  after surgery on the abdomen or pelvis,PSI_14_POSTOP_DEHIS,0,128,0,15,,07/01/2013,06/30/2015
+NY,Pressure sores,PSI_3_ULCER,21,128,0,3,,07/01/2013,06/30/2015
+NY,Accidental cuts and tears from medical treatment,PSI_15_ACC_LAC,10,139,5,1,,07/01/2013,06/30/2015
+NY,Deaths among Patients with Serious Treatable Complications after Surgery,PSI_4_SURG_COMP,3,79,2,57,,07/01/2013,06/30/2015
+NY,Infections from a large venous catheter,PSI_7_CVCBI,4,150,0,2,,07/01/2013,06/30/2015
+NY,Broken hip from a fall after surgery,PSI_8_POST_HIP,0,144,0,5,,07/01/2013,06/30/2015
+NY,Blood stream infection after surgery,PSI_13_POST_SEPSIS,2,102,0,40,,07/01/2013,06/30/2015
