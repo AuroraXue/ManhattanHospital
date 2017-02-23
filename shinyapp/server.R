@@ -216,7 +216,7 @@ shinyServer(function(input, output) {
                   vlcex=0.4 
       )
       legend(0.9,1.2,
-             legend=c("0-3:Best Performance","3-6:Below Average","6-9:Above Average","9-12:Worse Performance"),text.col="black",
+             legend=c("0-3:Best Performance","3-6:Above Average","6-9:Below Average","9-12:Worse Performance"),text.col="black",
              bty = "n",cex = 0.7)
     })
 
