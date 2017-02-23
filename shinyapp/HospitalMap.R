@@ -2,16 +2,22 @@ library("leaflet")
 library("dplyr")
 library("png")
 library("grid")
+<<<<<<< HEAD
 
 filename<-"hospital_manhattan_basic_info1.csv"
 Manhattan_hospital<-read.csv(file = filename,header=T)
 
+=======
+Manhattan_hospital<-read.csv("hospital_manhattan_basic_info.csv")
+Manhattan_hospital$Score<-as.numeric(Manhattan_hospital$Score)
+# summary(Manhattan_hospital$Price.Score)
+>>>>>>> origin/master
 cost<-c()
 for (i in 1:nrow(Manhattan_hospital)){
-  if (is.na(Manhattan_hospital$Price.Score[i])==FALSE){
-    if (Manhattan_hospital$Price.Score[i]<0.965){
+  if (is.na(Manhattan_hospital$Score[i])==FALSE){
+    if (Manhattan_hospital$Score[i]<0.965){
       cost[i]<-"Lower than Average"
-    }else if(Manhattan_hospital$Price.Score[i]>=0.965 & Manhattan_hospital$Price.Score[i]<=0.9975){
+    }else if(Manhattan_hospital$Score[i]>=0.965 & Manhattan_hospital$Score[i]<=0.9975){
       cost[i]<-"About Average"
     }else{
       cost[i]<-"Above Average"
@@ -23,7 +29,10 @@ for (i in 1:nrow(Manhattan_hospital)){
 Manhattan_hospital<-cbind(Manhattan_hospital,cost)
 averageWaitingtime<-read.csv("Average_Waitingtime.csv")
 averageWaitingtime<-averageWaitingtime$Average.WaitingTime
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 content1<-paste("<b><a href ='http://www.mountsinai.org'> Mount Sinai Hospital</a><b>","<br/>",
                 "Average Waiting Time: ",averageWaitingtime[1],"<br/>", 
                 "Cost Level: ",Manhattan_hospital$cost[1])
@@ -76,4 +85,4 @@ m %>% setView(lng = -73.9712 , lat =  40.7831, zoom = 12)
   %>% # popup
     addTiles() %>%
     # add som markers:
-    addMarkers(Manhattan_hospital$Longitude,Manhattan_hospital$Latitude,popup=hospital_content))
+    addMarkers(Manhattan_hospital$lng,Manhattan_hospital$lat,popup=hospital_content))
