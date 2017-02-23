@@ -31,6 +31,33 @@ for(i in 1:10){
 
 library(fmsb)
 
+# i = names of the hospital
+df=as.data.frame(rbind(rep(11,10) , rep(0,10) , new_complications[i,]))
+
+radarchart( df  , axistype=1 , 
+ 
+    #custom polygon
+    pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=2 , 
+ 
+    #custom the grid
+    cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
+ 
+    title = "COMPLICATIONS PERFORMANCE",
+    vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
+    #custom labels
+    vlcex=0.4 
+    )
+legend(0.9,1.2,
+       legend=c("0-3:Best Performance","3-6:Below Average","6-9:Above Average","9-12:Worse Performance"),text.col="black",
+       bty = "n",cex = 0.7)
+
+
+
+
+
+
+
+
 #matrix for BELLEVUE HOSPITAL CENTER
 BELLEVUE_HOSPITAL_CENTER<-new_complications["BELLEVUE HOSPITAL CENTER",]
 BELLEVUE_HOSPITAL_CENTER=as.data.frame(rbind(rep(11,10) , rep(0,10) , BELLEVUE_HOSPITAL_CENTER))
