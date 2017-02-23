@@ -92,9 +92,6 @@ shinyServer(function(input, output) {
                     "Overall Rank: ","<br/>", 
                     "Average Cost: ")
     content2<-paste("<b><a href ='http://www.mountsinai.org/locations/st-lukes'> Mount Sinai St. Luke's Hospital</a><b>","<br/>",
-                    "Overall Rank: ","<br/>", 
-                    "Average Cost: ")
-    content2<-paste("<b><a href ='http://www.mountsinai.org/locations/st-lukes'> Mount Sinai St. Luke's Hospital</a><b>","<br/>",
                     "Overall Rank: ", "<br/>",
                     "Average Cost: ")
     content3<-paste("<b><a href ='www.nyee.edu'> New York Eyes and Ear Infirmary</a><b>","<br/>",
