@@ -124,7 +124,8 @@ shinyServer(function(input, output) {
     content12<-paste("<b><a href ='https://www.rucares.org/'> The Rockefeller University Hospital</a><b>","<br/>",
                      "Overall Rank: ", "<br/>",
                      "Average Cost: ")
-    hospital_content<-c(content1,content2,content3,content4,content5,content6,content7,content8,content9,content10,content11,content12)
+    hospital_content<-data.frame(content8,content10,content11,content5,content7,content6,content1,content3,content4,content9,content2,content12)
+    colnames(hospital_content)<-c(rownames(new_complications)[1:11],"Reckefeller Unisity")
     
     rank<-seq(1,nrow(Manhattan_hospital))
     # Plot a default web map (brackets display the result)
@@ -216,6 +217,17 @@ shinyServer(function(input, output) {
              legend=c("0-3:Best Performance","3-6:Above Average","6-9:Below Average","9-12:Worse Performance"),text.col="black",
              bty = "n",cex = 0.7)
     })
+             
+   output$hospitalMap<-renderLeaflet({
+      nyc()%>% setView(lng = -73.9712 , lat =  40.7831, zoom = 12)
+      (m2 <- m %>% # popup
+          addTiles() %>%
+          # add som markers:
+          addMarkers(Manhattan_hospital$lng[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))],
+                     Manhattan_hospital$lat[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))]
+                  
+                     
+    ))})
 
 #     
    
