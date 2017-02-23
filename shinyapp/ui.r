@@ -18,7 +18,7 @@ library("grid")
 # Define UI for application that draws a histogram
 library(shiny)
 library(devtools)
-devtools::install_github('ramnathv/rCharts',force = T)
+# devtools::install_github('ramnathv/rCharts',force = T)
 library(rCharts)
 library(rjson)
 library("googleVis")
@@ -43,7 +43,6 @@ shinyUI(navbarPage("Hospital New York",theme = shinytheme("cerulean"),
                                                   includeMarkdown("contact.md"))
                             )),
                    tabPanel("Hospital ", titlePanel(h2("Hospital")),
-                            
                             sidebarLayout(
                               sidebarPanel(
                                 selectInput(inputId = "outcome",
@@ -64,11 +63,8 @@ shinyUI(navbarPage("Hospital New York",theme = shinytheme("cerulean"),
                                             
                                             tabPanel('Table', h3(textOutput('outcome')),
                                                      tableOutput("filtered")),
-                                            tabPanel('Plot', plotOutput('barplot'))
-                                            
-                                )
+                                            tabPanel('Plot', plotOutput('barplot')))
                               )
-                              
                             )),
                    tabPanel("Spider",titlePanel(h2("Spider")),
                             sidebarLayout(
@@ -86,7 +82,7 @@ shinyUI(navbarPage("Hospital New York",theme = shinytheme("cerulean"),
                    ),
                    
                    
-                   tabPanel("Compare Your Local Hospitals"),
+                   tabPanel("Compare Your Local Hospitals",titlePanel(h2("Compare Your Local Hospitals")),
                    sidebarLayout(
                      sidebarPanel(
                        h3('Hospital Associated Infection (HAI)'),
@@ -99,7 +95,7 @@ shinyUI(navbarPage("Hospital New York",theme = shinytheme("cerulean"),
                        p('Smaller values indicate lower rates of infection. Hospitals may be missing due to lack of data or they do not take Medicare or Medicaid patients.'),
                        showOutput('newBar', 'dimple')
                      )
-                   )
+                   ))
                    
 ))
 

@@ -1,5 +1,5 @@
-path_source <- 'data/Outcome of Care Measures.csv'
-path_cleaned <- 'cache/outcome.cleaned.RData'
+path_source <- '../data/Outcome of Care Measures.csv'
+path_cleaned <- '../cache/outcome.cleaned.RData'
 
 
 tidy_data <- function() {

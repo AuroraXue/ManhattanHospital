@@ -10,7 +10,6 @@
 library(shiny)
 library(datasets)
 library(fmsb)
-# Define server logic required to plot various variables against mpg
 library(ggplot2)
 library("leaflet")
 library("dplyr")
@@ -40,8 +39,6 @@ order_col <- function(csv_df, name) {
   csv_df
 }
 
-# 
-
 col_rank <- function(csv_df, name) {
   
   col <- get_col_index(csv_df, name)
@@ -67,6 +64,7 @@ apply_params <- function(state, outcome, range) {
 
 complications<-read.csv("Complications_Manhattan.csv")
 filename<-"../data/hospital_manhattan_basic_info1.csv"
+
 Manhattan_hospital<-read.csv(file = filename,header=T)
 
 new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
@@ -150,8 +148,8 @@ shinyServer(function(input, output) {
     averageWaitingtime<-averageWaitingtime$Average.WaitingTime
     
     content1<-paste("<b><a href =' '> Mount Sinai Hospital</ a><b>","<br/>",
-                    "Average Waiting Time: ",averageWaitingtime[1],"<br/>", 
-                    "Cost Level: ",Manhattan_hospital$cost[1])
+                    "Average Waiting Time: ", averageWaitingtime[1], "<br/>", 
+                    "Cost Level: ", Manhattan_hospital$cost[1])
     content2<-paste("<b><a href ='http://www.mountsinai.org/locations/st-lukes'> Mount Sinai St. Luke's Hospital</ a><b>","<br/>",
                     "Average Waiting Time: ",averageWaitingtime[2], "<br/>",
                     "Cost Level: ",Manhattan_hospital$cost[2])
