@@ -45,40 +45,34 @@ shinyUI(navbarPage("Hospital New York",theme = shinytheme("cerulean"),
                               mainPanel(
                                 tabsetPanel(type = "tabs", selected = "Info",
                                             tabPanel("Hospital Info", leafletOutput("nyc_map")),
-                                         #Radar plot   tabPanel("Radar Plot",leafletOutput())
+                                        
                                             tabPanel('Table', h3(textOutput('outcome')),
                                                     tableOutput("filtered")),
-                                            tabPanel('Plot ggplot', plotOutput('barplot'))
+                                            tabPanel('Plot', plotOutput('barplot'))
             
                                 )
                               )
  
-                   ))#,
-                   # tabPanel("Spider",titlePanel(h2("Spider")),
-                   #          sidebarLayout(
-                   #            sidebarPanel(
-                   #              selectInput("What U care about",
-                   #                                 h4("What you care about"),
-                   #                                 choices = colnames(new_complications),
-                   #                          hr())),
-                   #            mainPanel(
-                   #              tabsetPanel(type = "tabs", selected = "Info",
-                   #                          tabPanel("Most suitable Hospital",h4("Most suitable Hospital"),
-                   #                                   tableOutput("hospital")),
-                   #                      
-                   #                          tabPanel('Radar Plot', h3("Radar Plot"),
-                   #                            plotOutput('radarplot')
-                   #                          )
-                   #                                   
-                   #                                   
-                   #                                   
-                   #                          )
-                   #              )
-                   #              
-                   #            ))
-                   )
+                   )),
+                   tabPanel("Spider",titlePanel(h2("Spider")),
+                            sidebarLayout(
+                              sidebarPanel(
+                                selectInput("care",
+                                                   h4("What you care about"),
+                                                   choices = colnames(new_complications),
+                                            hr())),
+                              mainPanel( 
+                                              textOutput("hospital"),
+                                              plotOutput('radarPlot1')
+                                             
+                                            )
+                                 )
+                                )
+
+                              ))
                    
- )
+                   
+ 
                            
                   
 

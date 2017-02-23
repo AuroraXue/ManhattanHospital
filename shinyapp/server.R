@@ -159,8 +159,13 @@ shinyServer(function(input, output) {
       
 
   ### shiny part
+    # hospitalfilter<- reactive({
+    #   apply_params(input$colnames(new_complications))
+    # })
+    # 
+    # output$hospitalfilter<-
 
-
+      
     
     filtered <- reactive({
       apply_params(input$state, input$outcome, input$range)
@@ -196,44 +201,51 @@ shinyServer(function(input, output) {
       # $ Value                           (dbl) 10.1, 10.2, 10.5, 10.5, 10.6, 10.7, 10.8, 11.0, 11.1, 11.2, 11....
     })
     
-    # 
-    # output$radarPlot1 <- renderPlot({
-    #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
-    #   colnames(new_complications)<-levels(complications$Measure.Name)
-    #   colnames(new_complications)
-    #   rownames(new_complications)<-levels(complications$Hospital.Name)
-    #   for(i in rownames(new_complications)){
-    #     for(j in colnames(new_complications)){
-    #       new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
-    #     }
-    #   }
-    #   new_complications<-new_complications[,-4]
-    #   new_complications<-apply(new_complications,2,order)
-    #   rownames(new_complications)<-levels(complications$Hospital.Name)
-    #   averageNYCperformance<-rep(6,ncol(new_complications))
-    #   new_complications=rbind(new_complications,averageNYCperformance)
-    #   
-    #   BELLEVUE_HOSPITAL_CENTER<-new_complications["BELLEVUE HOSPITAL CENTER",]
-    #   BELLEVUE_HOSPITAL_CENTER=as.data.frame(rbind(rep(11,10) , rep(0,10) , BELLEVUE_HOSPITAL_CENTER))
-    #   
-    #  radarchart( BELLEVUE_HOSPITAL_CENTER  , axistype=1 , 
-    #                   
-    #                   #custom polygon
-    #                   pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=2 , 
-    #                   
-    #                   #custom the grid
-    #                   cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
-    #                   
-    #                   title = "BELLEVUE HOSPITAL CENTER COMPLICATIONS PERFORMANCE",
-    #                   vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
-    #                   #custom labels
-    #                   vlcex=0.4 
-    #   )
-    #   legend(0.9,1.2,
-    #          legend=c("0-3:Best Performance","3-6:Below Average","6-9:Above Average","9-12:Worse Performance"),text.col="black",
-    #          bty = "n",cex = 0.7)
-    # })
-    # 
+    output$hospital <- renderText({
+      names(which(new_complications[,input$care]==1))
+    })
+    
+    
+    output$radarPlot1 <- renderPlot({
+      new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
+      colnames(new_complications)<-levels(complications$Measure.Name)
+      colnames(new_complications)
+      rownames(new_complications)<-levels(complications$Hospital.Name)
+      for(i in rownames(new_complications)){
+        for(j in colnames(new_complications)){
+          new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
+        }
+      }
+      new_complications<-new_complications[,-4]
+      new_complications<-apply(new_complications,2,order)
+      rownames(new_complications)<-levels(complications$Hospital.Name)
+      averageNYCperformance<-rep(6,ncol(new_complications))
+      new_complications=rbind(new_complications,averageNYCperformance)
+
+      BELLEVUE_HOSPITAL_CENTER<-new_complications["BELLEVUE HOSPITAL CENTER",]
+      BELLEVUE_HOSPITAL_CENTER=as.data.frame(rbind(rep(11,10) , rep(0,10) , BELLEVUE_HOSPITAL_CENTER))
+
+     radarchart( BELLEVUE_HOSPITAL_CENTER  , axistype=1 ,
+
+                      #custom polygon
+                      pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=2 ,
+
+                      #custom the grid
+                      cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
+
+                      title = "BELLEVUE HOSPITAL CENTER COMPLICATIONS PERFORMANCE",
+                      vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
+                      #custom labels
+                      vlcex=0.4
+      )
+      legend(0.9,1.2,
+             legend=c("0-3:Best Performance","3-6:Below Average","6-9:Above Average","9-12:Worse Performance"),text.col="black",
+             bty = "n",cex = 0.7)
+    })
+    
+    output$hospital1 <- renderText({
+      paste("Most recommanded hospital BELLEVUE HOSPITAL CENTER")
+    })
     # output$radarPlot2 <- renderPlot({
     #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
     #   colnames(new_complications)<-levels(complications$Measure.Name)
@@ -274,6 +286,11 @@ shinyServer(function(input, output) {
     #   
     # })
     # 
+    output$hospital2 <- renderText({
+      paste("Most recommanded hospital HARLEM HOSPITAL CENTER")
+    })
+    
+    
     # output$radarPlot3 <- renderPlot({
     #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
     #   colnames(new_complications)<-levels(complications$Measure.Name)
@@ -300,7 +317,7 @@ shinyServer(function(input, output) {
     #               #custom the grid
     #               cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
     #               
-    #               title = "HARLEM HOSPITAL CENTER COMPLICATIONS PERFORMANCE",
+    #               title = "HOSPITAL_FOR_SPECIAL_SURGERY COMPLICATIONS PERFORMANCE",
     #               
     #               vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
     #               
@@ -312,7 +329,9 @@ shinyServer(function(input, output) {
     #          bty = "n",cex = 0.7)
     #   
     # })
-    # 
+    output$hospital3 <- renderText({
+    paste("Most recommanded hospital HOSPITAL_FOR_SPECIAL_SURGERY")
+})
     # output$radarPlot4 <- renderPlot({
     #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
     #   colnames(new_complications)<-levels(complications$Measure.Name)
@@ -352,6 +371,13 @@ shinyServer(function(input, output) {
     #   
     # })
     # 
+    
+    output$hospital4 <- renderText({
+      paste("Most recommanded hospital LENOX HILL HOSPITAL")
+    })
+    
+    
+    
     # output$radarPlot5 <- renderPlot({
     #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
     #   colnames(new_complications)<-levels(complications$Measure.Name)
@@ -390,10 +416,15 @@ shinyServer(function(input, output) {
     #          legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
     #          bty = "n",cex = 0.7)
     #   
-    #   
-    #   
     # })
     # 
+    
+    
+    output$hospital5 <- renderText({
+      paste("Most recommanded hospital METROPOLITAN HOSPITAL CENTER")
+    })
+    
+    
     # output$radarPlot6 <- renderPlot({
     #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
     #   colnames(new_complications)<-levels(complications$Measure.Name)
@@ -421,7 +452,7 @@ shinyServer(function(input, output) {
     #               #custom the grid
     #               cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
     #               
-    #               title = "METROPOLITAN HOSPITAL CENTER COMPLICATIONS PERFORMANCE",
+    #               title = "MOUNT_SINAI_BETH_ISRAELPETRIE_CAMPUS COMPLICATIONS PERFORMANCE",
     #               
     #               vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
     #               
@@ -434,7 +465,11 @@ shinyServer(function(input, output) {
     #   
     #   
     # })
-    # 
+    #
+    
+    output$hospital6 <- renderText({
+      paste("Most recommanded hospital MOUNT_SINAI_BETH_ISRAELPETRIE_CAMPUS")
+    })
     # output$radarPlot7 <- renderPlot({
     #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
     #   colnames(new_complications)<-levels(complications$Measure.Name)
@@ -474,7 +509,9 @@ shinyServer(function(input, output) {
     #          bty = "n",cex = 0.7)
     #   
     # })
-    # 
+    output$hospital7 <- renderText({
+      paste("Most recommanded hospital MOUNT SINAI HOSPITAL")
+    }) 
     # output$radarPlot8 <- renderPlot({
     #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
     #   colnames(new_complications)<-levels(complications$Measure.Name)
@@ -514,7 +551,10 @@ shinyServer(function(input, output) {
     #          bty = "n",cex = 0.7)
     #   
     # })
-    # 
+    
+    output$hospital8 <- renderText({
+    paste("Most recommanded hospital New York EYE & EAR INFIRMARY")
+})  
     # output$radarPlot9 <- renderPlot({
     #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
     #   colnames(new_complications)<-levels(complications$Measure.Name)
@@ -555,7 +595,12 @@ shinyServer(function(input, output) {
     #   
     #   
     # })
-    # 
+    output$hospital9 <- renderText({
+      paste("Most recommanded hospital NEW YORK PRESBYTERIAN HOSPITAL")
+    })  
+    
+    
+     
     # output$radarPlot10 <- renderPlot({
     #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
     #   colnames(new_complications)<-levels(complications$Measure.Name)
@@ -596,7 +641,11 @@ shinyServer(function(input, output) {
     #   
     #   
     # })
-    # 
+    output$hospital10 <- renderText({
+      paste("Most recommanded hospital NYU HOSPITALS CENTER")
+    })  
+    
+     
     # output$radarPlot11 <- renderPlot({
     #   new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
     #   colnames(new_complications)<-levels(complications$Measure.Name)
@@ -638,48 +687,11 @@ shinyServer(function(input, output) {
     #   
     # })
     
-    output$radarplot <- renderPlot({
-      
-      # Render a barplot
-      new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
-      colnames(new_complications)<-levels(complications$Measure.Name)
-      colnames(new_complications)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      for(i in rownames(new_complications)){
-        for(j in colnames(new_complications)){
-          new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
-        }
-      }
-      new_complications<-new_complications[,-4]
-      new_complications<-apply(new_complications,2,order)
-      rownames(new_complications)<-levels(complications$Hospital.Name)
-      averageNYCperformance<-rep(6,ncol(new_complications))
-      new_complications=rbind(new_complications,averageNYCperformance)
-      
-      # Spider for ST LUKE'S ROOSEVELT HOSPITAL
-      ST_LUKE_ROOSEVELT_HOSPITAL<-new_complications["ST LUKE'S ROOSEVELT HOSPITAL",]
-      ST_LUKE_ROOSEVELT_HOSPITAL=as.data.frame(rbind(rep(11,10) , rep(0,10) , ST_LUKE_ROOSEVELT_HOSPITAL))
-      radarchart(ST_LUKE_ROOSEVELT_HOSPITAL, axistype=1 , 
-                 
-                 #custom polygon
-                 pcol=rgb(0.5,0.1,0.6,0.9) , pfcol=rgb(0.5,0,0.1,0.5) , plwd=2 , 
-                 
-                 #custom the grid
-                 cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
-                 
-                 title = "ST LUKE'S ROOSEVELT HOSPITAL COMPLICATIONS PERFORMANCE",
-                 
-                 vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
-                 
-                 #custom labels
-                 vlcex=0.4 
-      )
-      
-      legend(0.9,1.2,
-             legend=c("0-3: Best Performance","3-6: Below Average","6-9: Above Average","9-12: Worse Performance"),text.col="black",
-             bty = "n",cex = 0.7)
-    })
+    output$hospital11 <- renderText({
+      paste("Most recommanded hospital ST LUKE'S ROOSEVELT HOSPITAL")
+    }) 
     
+   
     datasetInput <- reactive({
       switch(input$new_complications,
              "A wound that splits open  after surgery on the abdomen or pelvis" = ,
@@ -694,9 +706,7 @@ shinyServer(function(input, output) {
              "Serious complications" = )
     })
     
-    output$hospital <- renderTable({
-      datasetInput()
-    })
+   
   })
     
     
