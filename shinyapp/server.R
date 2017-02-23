@@ -84,50 +84,50 @@ rownames(new_complications)<-levels(complications$Hospital.Name)
 averageNYCperformance<-rep(6,ncol(new_complications))
 new_complications=rbind(new_complications,averageNYCperformance)
 
+source('helpers.R')
+library(fields)
+
+
 
 shinyServer(function(input, output) {
   
-  nyc<-reactive({
-    content1<-paste("<b><a href ='http://www.mountsinai.org'> Mount Sinai Hospital</a><b>","<br/>",
-                    "Overall Rank: ","<br/>", 
-                    "Average Cost: ")
-    content2<-paste("<b><a href ='http://www.mountsinai.org/locations/st-lukes'> Mount Sinai St. Luke's Hospital</a><b>","<br/>",
-                    "Overall Rank: ", "<br/>",
-                    "Average Cost: ")
-    content3<-paste("<b><a href ='www.nyee.edu'> New York Eyes and Ear Infirmary</a><b>","<br/>",
-                    "Overall Rank: ","<br/>", 
-                    "Average Cost: ")
-    content4<-paste("<b><a href ='http://www.nyp.org/'> New York Presbyterian Hospital</a><b>","<br/>",
-                    "Overall Rank: ", "<br/>",
-                    "Average Cost: ")
-    content5<-paste("<b><a href ='https://www.northwell.edu/find-care/locations/lenox-hill-hospital'> Lenox Hill Hospital | Northwell Health</a><b>","<br/>",
-                    "Overall Rank: ", "<br/>",
-                    "Average Cost: ")
-    content6<-paste("<b><a href ='http://www.bethisraelny.org/petrie/'> Mount Sinai Beth Israel - Petrie Division</a><b>","<br/>",
-                    "Overall Rank: ", "<br/>",
-                    "Average Cost: ")
-    content7<-paste("<b><a href ='http://www.nychealthandhospitals.org/metropolitan/'> NYC Health + Hospitals| Metropolitan</a><b>","<br/>",
-                    "Overall Rank: ", "<br/>",
-                    "Average Cost: ")
-    content8<-paste("<b><a href ='http://www.nychealthandhospitals.org/bellevue/'> NYC Health + Hospitals| Bellevue</a><b>","<br/>",
-                    "Overall Rank: ", "<br/>",
-                    "Average Cost: ")
-    content9<-paste("<b><a href ='https://profiles.health.ny.gov/hospital/view/103021'> NYU Hospital Center</a><b>","<br/>",
-                    "Overall Rank: ","<br/>",
-                    "Average Cost: ")
-    content10<-paste("<b><a href ='http://www.nychealthandhospitals.org/harlem/'> Harlem Hospital Center</a><b>","<br/>",
-                     "Overall Rank: ", "<br/>",
-                     "Average Cost: ")
-    content11<-paste("<b><a href ='https://www.hss.edu/why-choose-hss.asp?gclid=COP0hOaFndICFQ5YDQodKWcJ4Q'> Hospital for Special Surgery</a><b>","<br/>",
-                     "Overall Rank: ", "<br/>",
-                     "Average Cost: ")
-    content12<-paste("<b><a href ='https://www.rucares.org/'> The Rockefeller University Hospital</a><b>","<br/>",
-                     "Overall Rank: ", "<br/>",
-                     "Average Cost: ")
-    
-    hospital_content<-data.frame(content8,content10,content11,content5,content7,content6,content1,content3,content4,content9,content2,content12)
-    colnames(hospital_content)<-c(rownames(new_complications)[1:11],"Reckefeller Unisity")
+  currentYear <- reactive({
+    input$year
+  })
   
+  hospital.data <- reactive({
+    hospital.list <- hospitals[hospitals$Year == currentYear(),]
+    hospital.list = aggregate(hospital.list$Infections.observed, by=list(Category=hospital.list$Hospital.Name), FUN=sum)
+    hospital.list = na.omit(hospital.list)
+    #hospital.list = hospital.list[1:10,]
+    colnames(hospital.list) = c("Name", "Infections.observed")
+    hospital.list
+  })
+  
+  
+  output$newBar <- renderChart2({
+    u1 = dPlot(
+      y = "Name",
+      x = "Infections.observed",
+      groups = "Name",
+      data = hospital.data(),
+      type = "bar",
+      height=500,
+      width=700,
+      bounds = list(x=300, y=30, width=400, height=400)
+    )
+    u1$xAxis(type="addMeasureAxis", outputFormat="#,")
+    u1$yAxis(type="addCategoryAxis")
+    u1
+    
+  })
+  
+  
+  
+  
+  
+  nyc<-reactive({
+   
     rank<-seq(1,nrow(Manhattan_hospital))
     # Plot a default web map (brackets display the result)
     (m <- leaflet() %>% addTiles())
@@ -227,11 +227,23 @@ shinyServer(function(input, output) {
           addMarkers(Manhattan_hospital$lng[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))],
                      Manhattan_hospital$lat[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))]#,
                      #popup=hospital_content[,names(which(new_complications[input$care]==1))]
-                     
-          ))})
+                     # addPopups <- function(
+                     #   m, lng = Manhattan_hospital$lng[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))], 
+                     #   lat = Manhattan_hospital$lat[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))], popup, layerId = NULL, group = NULL,
+                     #   options = popupOptions(),
+                     #   data = getMapData(m)
+                     # ) {
+                     #   pts = derivePoints(data, lng, lat, missing(lng), missing(lat), "addPopups")
+                     #   invokeMethod(m, data, 'addPopups', pts$lat, pts$lng, popup, layerId, group, options) %>%
+                     #     expandLimits(pts$lat, pts$lng)
+                     # }
+          
+                     ))
+        
+        
+      })
     
-                     
-  
+   
 
 #     
    
