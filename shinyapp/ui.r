@@ -19,7 +19,7 @@ library("grid")
 
 source('info.R')
 shinyUI(navbarPage("Hospital New York",theme = shinytheme("cerulean"),
-
+                   
                    tabPanel("Introduction",
                             navlistPanel("Introduction",
                                          tabPanel("info",info),
@@ -38,38 +38,40 @@ shinyUI(navbarPage("Hospital New York",theme = shinytheme("cerulean"),
                                             min = 1,
                                             max = 100,
                                             value = c(1, 20)),
-                               checkboxGroupInput("fields",
+                                checkboxGroupInput("fields",
                                                    h4("Fields"),
                                                    choices = columns)
                               ),
                               mainPanel(
                                 tabsetPanel(type = "tabs", selected = "Info",
                                             tabPanel("Hospital Info", leafletOutput("nyc_map")),
-                                        
+                                            
                                             tabPanel('Table', h3(textOutput('outcome')),
-                                                    tableOutput("filtered")),
+                                                     tableOutput("filtered")),
                                             tabPanel('Plot', plotOutput('barplot'))
-            
+                                            
                                 )
                               )
- 
-                   )),
+                              
+                            )),
                    tabPanel("Spider",titlePanel(h2("Spider")),
                             sidebarLayout(
                               sidebarPanel(
                                 selectInput("care",
-                                                   h4("What you care about"),
-                                                   choices = colnames(new_complications),
+                                            h4("What you care about"),
+                                            choices = colnames(new_complications),
                                             hr())),
                               mainPanel( 
-                                              textOutput("hospital"),
-                                              plotOutput('radarPlot1')
-                                             
-                                            )
-                                 )
-                                )
+                                textOutput("hospital"),
+                                plotOutput('radarPlot1'),
+                                leafletOutput("hospitalMap")
+                              )
+                            )
+                   )
+                   
+))
 
-                              ))
+
                    
                    
  
