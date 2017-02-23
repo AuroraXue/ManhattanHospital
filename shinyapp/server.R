@@ -89,41 +89,41 @@ shinyServer(function(input, output) {
   
   nyc<-reactive({
     content1<-paste("<b><a href ='http://www.mountsinai.org'> Mount Sinai Hospital</a><b>","<br/>",
-                    "Overall Rank: ","<br/>", 
-                    "Average Cost: ")
+                    "Average Waiting Time: 29","<br/>", 
+                    "Cost Level: Lower than Average")
     content2<-paste("<b><a href ='http://www.mountsinai.org/locations/st-lukes'> Mount Sinai St. Luke's Hospital</a><b>","<br/>",
-                    "Overall Rank: ", "<br/>",
-                    "Average Cost: ")
+                    "Average Waiting Time: 24", "<br/>",
+                    "Cost Level: About Average")
     content3<-paste("<b><a href ='www.nyee.edu'> New York Eyes and Ear Infirmary</a><b>","<br/>",
-                    "Overall Rank: ","<br/>", 
-                    "Average Cost: ")
+                    "Average Waiting Time: NA","<br/>", 
+                    "Cost Level: Above Average")
     content4<-paste("<b><a href ='http://www.nyp.org/'> New York Presbyterian Hospital</a><b>","<br/>",
-                    "Overall Rank: ", "<br/>",
-                    "Average Cost: ")
+                    "Average Waiting Time: 15", "<br/>",
+                    "Cost Level: About Average")
     content5<-paste("<b><a href ='https://www.northwell.edu/find-care/locations/lenox-hill-hospital'> Lenox Hill Hospital | Northwell Health</a><b>","<br/>",
-                    "Overall Rank: ", "<br/>",
-                    "Average Cost: ")
+                    "Average Waiting Time: 20", "<br/>",
+                    "Cost Level: Lower than Average")
     content6<-paste("<b><a href ='http://www.bethisraelny.org/petrie/'> Mount Sinai Beth Israel - Petrie Division</a><b>","<br/>",
-                    "Overall Rank: ", "<br/>",
-                    "Average Cost: ")
+                    "Average Waiting Time: 23", "<br/>",
+                    "Cost Level: Above Average")
     content7<-paste("<b><a href ='http://www.nychealthandhospitals.org/metropolitan/'> NYC Health + Hospitals| Metropolitan</a><b>","<br/>",
-                    "Overall Rank: ", "<br/>",
-                    "Average Cost: ")
+                    "Average Waiting Time: 50", "<br/>",
+                    "Cost Level: Above Average")
     content8<-paste("<b><a href ='http://www.nychealthandhospitals.org/bellevue/'> NYC Health + Hospitals| Bellevue</a><b>","<br/>",
-                    "Overall Rank: ", "<br/>",
-                    "Average Cost: ")
+                    "Average Waiting Time: 28", "<br/>",
+                    "Cost Level: NA")
     content9<-paste("<b><a href ='https://profiles.health.ny.gov/hospital/view/103021'> NYU Hospital Center</a><b>","<br/>",
-                    "Overall Rank: ","<br/>",
-                    "Average Cost: ")
+                    "Average Waiting Time: 11","<br/>",
+                    "Cost Level: About Average")
     content10<-paste("<b><a href ='http://www.nychealthandhospitals.org/harlem/'> Harlem Hospital Center</a><b>","<br/>",
-                     "Overall Rank: ", "<br/>",
-                     "Average Cost: ")
+                     "Average Waiting Time: 90", "<br/>",
+                     "Cost Level: Above Average")
     content11<-paste("<b><a href ='https://www.hss.edu/why-choose-hss.asp?gclid=COP0hOaFndICFQ5YDQodKWcJ4Q'> Hospital for Special Surgery</a><b>","<br/>",
-                     "Overall Rank: ", "<br/>",
-                     "Average Cost: ")
+                     "Average Waiting Time: NA", "<br/>",
+                     "Cost Level: NA")
     content12<-paste("<b><a href ='https://www.rucares.org/'> The Rockefeller University Hospital</a><b>","<br/>",
-                     "Overall Rank: ", "<br/>",
-                     "Average Cost: ")
+                     "Average Waiting Time: NA", "<br/>",
+                     "Cost Level: Lower than Average")
     
     hospital_content<-data.frame(content8,content10,content11,content5,content7,content6,content1,content3,content4,content9,content2,content12)
     colnames(hospital_content)<-c(rownames(new_complications)[1:11],"Reckefeller Unisity")
