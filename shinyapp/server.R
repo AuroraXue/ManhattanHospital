@@ -17,9 +17,9 @@ library("dplyr")
 library("png")
 library("grid")
 
-source('help_func.R')
-source("HospitalMap.R")
-source("Plot.R")
+source("help_func.R",local=T)
+source("HospitalMap.R",local=T)
+source("Plot.R",local=T)
 
 state_filter <- function(csv_df, state) {
   subset(csv_df, State == 'NY')
