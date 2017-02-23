@@ -226,7 +226,12 @@ shinyServer(function(input, output) {
           # add som markers:
           addMarkers(Manhattan_hospital$lng[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))],
                      Manhattan_hospital$lat[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))]#,
+<<<<<<< Updated upstream
                      #popup=hospital_content[,names(which(new_complications[input$care]==1))]
+=======
+                     #popup = hospital_content[,names(which(new_complications[input$care]==1))]
+                  
+>>>>>>> Stashed changes
                      
           ))})
     
