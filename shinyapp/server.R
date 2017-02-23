@@ -91,6 +91,7 @@ library(fields)
 
 shinyServer(function(input, output) {
   
+<<<<<<< HEAD
   currentYear <- reactive({
     input$year
   })
@@ -119,6 +120,45 @@ shinyServer(function(input, output) {
     u1$xAxis(type="addMeasureAxis", outputFormat="#,")
     u1$yAxis(type="addCategoryAxis")
     u1
+=======
+  nyc<-reactive({
+    content1<-paste("<b><a href ='http://www.mountsinai.org'> Mount Sinai Hospital</a><b>","<br/>",
+                    "Average Waiting Time: 29","<br/>", 
+                    "Cost Level: Lower than Average")
+    content2<-paste("<b><a href ='http://www.mountsinai.org/locations/st-lukes'> Mount Sinai St. Luke's Hospital</a><b>","<br/>",
+                    "Average Waiting Time: 24", "<br/>",
+                    "Cost Level: About Average")
+    content3<-paste("<b><a href ='www.nyee.edu'> New York Eyes and Ear Infirmary</a><b>","<br/>",
+                    "Average Waiting Time: NA","<br/>", 
+                    "Cost Level: Above Average")
+    content4<-paste("<b><a href ='http://www.nyp.org/'> New York Presbyterian Hospital</a><b>","<br/>",
+                    "Average Waiting Time: 15", "<br/>",
+                    "Cost Level: About Average")
+    content5<-paste("<b><a href ='https://www.northwell.edu/find-care/locations/lenox-hill-hospital'> Lenox Hill Hospital | Northwell Health</a><b>","<br/>",
+                    "Average Waiting Time: 20", "<br/>",
+                    "Cost Level: Lower than Average")
+    content6<-paste("<b><a href ='http://www.bethisraelny.org/petrie/'> Mount Sinai Beth Israel - Petrie Division</a><b>","<br/>",
+                    "Average Waiting Time: 23", "<br/>",
+                    "Cost Level: Above Average")
+    content7<-paste("<b><a href ='http://www.nychealthandhospitals.org/metropolitan/'> NYC Health + Hospitals| Metropolitan</a><b>","<br/>",
+                    "Average Waiting Time: 50", "<br/>",
+                    "Cost Level: Above Average")
+    content8<-paste("<b><a href ='http://www.nychealthandhospitals.org/bellevue/'> NYC Health + Hospitals| Bellevue</a><b>","<br/>",
+                    "Average Waiting Time: 28", "<br/>",
+                    "Cost Level: NA")
+    content9<-paste("<b><a href ='https://profiles.health.ny.gov/hospital/view/103021'> NYU Hospital Center</a><b>","<br/>",
+                    "Average Waiting Time: 11","<br/>",
+                    "Cost Level: About Average")
+    content10<-paste("<b><a href ='http://www.nychealthandhospitals.org/harlem/'> Harlem Hospital Center</a><b>","<br/>",
+                     "Average Waiting Time: 90", "<br/>",
+                     "Cost Level: Above Average")
+    content11<-paste("<b><a href ='https://www.hss.edu/why-choose-hss.asp?gclid=COP0hOaFndICFQ5YDQodKWcJ4Q'> Hospital for Special Surgery</a><b>","<br/>",
+                     "Average Waiting Time: NA", "<br/>",
+                     "Cost Level: NA")
+    content12<-paste("<b><a href ='https://www.rucares.org/'> The Rockefeller University Hospital</a><b>","<br/>",
+                     "Average Waiting Time: NA", "<br/>",
+                     "Cost Level: Lower than Average")
+>>>>>>> origin/master
     
   })
   
@@ -226,7 +266,9 @@ shinyServer(function(input, output) {
           # add som markers:
           addMarkers(Manhattan_hospital$lng[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))],
                      Manhattan_hospital$lat[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))]#,
+<<<<<<< Updated upstream
                      #popup=hospital_content[,names(which(new_complications[input$care]==1))]
+<<<<<<< HEAD
                      # addPopups <- function(
                      #   m, lng = Manhattan_hospital$lng[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))], 
                      #   lat = Manhattan_hospital$lat[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))], popup, layerId = NULL, group = NULL,
@@ -242,6 +284,14 @@ shinyServer(function(input, output) {
         
         
       })
+=======
+=======
+                     #popup = hospital_content[,names(which(new_complications[input$care]==1))]
+                  
+>>>>>>> Stashed changes
+                     
+          ))})
+>>>>>>> origin/master
     
    
 
