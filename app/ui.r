@@ -33,6 +33,75 @@ years <- c("2008" = "2008",
            "2012" = "2012",
            "2013" = "2013",
            "2014" = "2014")
+source("help_func.R",local=T)
+source("HospitalMap.R",local=T)
+source("Plot.R",local=T)
+
+state_filter <- function(csv_df, state) {
+  subset(csv_df, State == 'NY')
+}
+
+clean_numeric <- function(csv_df, name) {
+  col <- get_col_index(csv_df, name)
+  csv_df <- subset(csv_df, grepl('[0-9]', csv_df[,col]))
+  csv_df[,col] <- as.numeric(csv_df[,col])
+  csv_df
+}
+
+order_col <- function(csv_df, name) {
+  col <- get_col_index(csv_df, name)
+  csv_df <- csv_df[order(csv_df[,col], csv_df$'Hospital Name'),]
+  csv_df$Rank <- rank(csv_df[,col], ties.method='min')
+  csv_df$Value <- csv_df[,col]
+  csv_df
+}
+
+col_rank <- function(csv_df, name) {
+  
+  col <- get_col_index(csv_df, name)
+  
+  csv_df <- csv_df[order(csv_df[,col], csv_df$'Hospital Name'),]
+  
+  csv_df$Rank <- rank(csv_df[,col], ties.method='min')
+  
+  csv_df$Value <- csv_df[,col]
+  csv_df
+}
+
+apply_params <- function(state, outcome, range) {
+  csv_df <- state_filter(csv_df, state)
+  csv_df <- clean_numeric(csv_df, outcome)
+  csv_df <- order_col(csv_df, outcome)  
+  nmin <- range[1]
+  nmax <- range[2]
+  mid(csv_df, nmin, nmax)
+}
+
+
+
+complications<-read.csv("Complications_Manhattan.csv")
+filename<-"hospital_manhattan_basic_info1.csv"
+Manhattan_hospital<-read.csv(file = filename,header=T)
+
+new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
+colnames(new_complications)<-levels(complications$Measure.Name)
+colnames(new_complications)
+rownames(new_complications)<-levels(complications$Hospital.Name)
+for(i in rownames(new_complications)){
+  for(j in colnames(new_complications)){
+    new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
+  }
+}
+new_complications<-new_complications[,-4]
+new_complications<-apply(new_complications,2,order)
+rownames(new_complications)<-levels(complications$Hospital.Name)
+averageNYCperformance<-rep(6,ncol(new_complications))
+new_complications=rbind(new_complications,averageNYCperformance)
+
+
+
+source('helpers.R',local=T)
+library(fields)
 source('info.R',local=T)
 shinyUI(navbarPage("Hospital New York",theme = shinytheme("cerulean"),
                    
