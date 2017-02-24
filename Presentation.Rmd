@@ -1,0 +1,77 @@
+---
+date: "February 24, 2017"
+output: html_document
+---
+
+# QUALICARE
+##Check performance of your local hospital based on HAI (Hospital Associated Infection), Complications Rank & Estimated Mortality. 
+
+
+```{r,echo=FALSE}
+#op<-par(mfrow=c(1,2))
+#par(op)
+library("png")
+img<-readPNG("name.png")
+grid::grid.raster(img)
+
+```
+
+```{r,echo=FALSE}
+img1<-readPNG("screen.png")
+grid::grid.raster(img1)
+```
+
+### What's our app about?
+* This is an app, pay attention to patient safety measure for the hospital quality, based on HAI(Hospital Associated Infection), mortality estimate and main complications. Provide information, like rank and value plot about the predict mortality in last 30 days. Besides, give the radar plot about main complications may happen in the hospital. And make recommendation about the hospital based on customer's concern. Also,this app provides the visual bar plot about the history data of HAI to help customers to better decide which hospital to go.
+
+### Problem patients might have when to decide which hospital to go
+* So many choice of hospital, but need to decide which one is the best suitable for patients
+
+* No easy way to combine the necessary information about hospital
+
+* Which value patients should refer when they choose hospital
+
+### What we need is:
+#### An app platform, where users can check the hospital perform based on estimate mortality, complications rank and HAI, to:
+
+* Get Suggestion when you have certin concern
+
+* Get sense of all the local hospital's performance
+
+* Get Combined Information about hospital from one simply source
+
+### QUALICARE is the right app:
+
+
+```{r,echo=FALSE}
+img2<-readPNG("1.png")
+grid::grid.raster(img2)
+```
+
+
+```{r,echo=FALSE}
+img3<-readPNG("2.png")
+grid::grid.raster(img3)
+```
+
+```{r,echo=FALSE}
+img4<-readPNG("3.png")
+grid::grid.raster(img4)
+```
+
+### This is how we do prediction:
+```{r}
+# Imroze i think this is your part?
+```
+
+### Our data source:
+https://data.medicare.gov/
+
+https://www.propublica.org/datastore/
+
+https://projects.propublica.org/emergency/
+
+```{r}
+# Imroze add your data source here
+```
+
