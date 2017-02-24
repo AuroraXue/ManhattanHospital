@@ -3,11 +3,9 @@ date: "February 24, 2017"
 output: html_document
 ---
 
-# QUALICARE
-##Check performance of your local hospital based on HAI (Hospital Associated Infection), Complications Rank & Estimated Mortality. 
 
 
-```{r,echo=FALSE}
+```{r,fig.align='center',echo=FALSE}
 #op<-par(mfrow=c(1,2))
 #par(op)
 library("png")
@@ -16,62 +14,75 @@ grid::grid.raster(img)
 
 ```
 
-```{r,echo=FALSE}
+<center> <h1>PROBLEM</h1> </center>
+In 1999, the Institute of Medicine reported 98,000 patients die each year because of medical mistakes in hospitals. That journal of Patient Safety has said that number has been increasing and now is — between 210,000 and 440,000 patients. Medical errors has become the third-leading cause of death in America, behind heart disease, which is the first, and cancer, which is second.
+
+
+
+<center> <h1>SOLUTION</h1> </center>
+
+A web platform where clinicans and hospital administrators can explore Quality Indicators (QIs) that are readily available from the hospital inpatient and administrative data. 
+
+
+<center> <h1>QUALICARE</h1> </center>
+
+Qualicare is a web platform that allows for clincians, hospital administrators to purse performance goals that result in better clinical outcomes, an improved patient experience and reduce organization costs.
+
+This robust interactive analytical application integrates a variety of data sources such as mortality and complications data with a focus on HAIs(Hospital Associated Infections) that serve as qualithy indicators.
+
+
+```{r,fig.align='center',echo=FALSE}
 img1<-readPNG("screen.png")
 grid::grid.raster(img1)
 ```
 
-### What's our app about?
-* This is an app, pay attention to patient safety measure for the hospital quality, based on HAI(Hospital Associated Infection), mortality estimate and main complications. Provide information, like rank and value plot about the predict mortality in last 30 days. Besides, give the radar plot about main complications may happen in the hospital. And make recommendation about the hospital based on customer's concern. Also,this app provides the visual bar plot about the history data of HAI to help customers to better decide which hospital to go.
 
-### Problem patients might have when to decide which hospital to go
-* So many choice of hospital, but need to decide which one is the best suitable for patients
+<center> <h1>USE CASE 1</h1> </center>
 
-* No easy way to combine the necessary information about hospital
+A hospital executive is interested in understanding the hospital HAI rates, specifically CLABSI rate as well in an effort to determine how compliant the doctors and nurses are at following best practices for hand hygiene. 
 
-* Which value patients should refer when they choose hospital
 
-### What we need is:
-#### An app platform, where users can check the hospital perform based on estimate mortality, complications rank and HAI, to:
+### Outcome
+Examine CLABSI rates and CLABSI prevention bundle compliance measures across the enterprise to help make visible the opportunities for improvement.The predictive CLABSI modelling of CLABSI feature allows this user to find these outcome and intervention metrics.
+
+<center> <h1>USE CASE 2</h1> </center>
+User is unsure of which hospital is suitable for patient needs. There is no easy way for them to combine performance measures to evaluate the best choice for referal.
+
+###Outcome
+An app platform, where users can check the hospital perform based on estimate mortality, complications rank and HAI, to:
 
 * Get Suggestion when you have certin concern
 
-* Get sense of all the local hospital's performance
+* Review local hospital's performance measures
 
 * Get Combined Information about hospital from one simply source
 
-### QUALICARE is the right app:
+<center> <h1>QUALICARE IS A RIGHT APP</h1> </center>
 
 
-```{r,echo=FALSE}
+```{r,fig.align='center',echo=FALSE}
 img2<-readPNG("1.png")
 grid::grid.raster(img2)
 ```
 
 
-```{r,echo=FALSE}
+```{r,fig.align='center',echo=FALSE}
 img3<-readPNG("2.png")
 grid::grid.raster(img3)
 ```
 
-```{r,echo=FALSE}
+```{r,fig.align='center',echo=FALSE}
 img4<-readPNG("3.png")
 grid::grid.raster(img4)
 ```
 
-### This is how we do prediction:
-```{r}
-# Imroze i think this is your part?
-```
 
-### Our data source:
+###### Our data source:
 https://data.medicare.gov/
 
 https://www.propublica.org/datastore/
 
 https://projects.propublica.org/emergency/
 
-```{r}
-# Imroze add your data source here
-```
+https://www.qualityindicators.ahrq.gov/
 
