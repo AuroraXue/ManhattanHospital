@@ -11,7 +11,6 @@ for(i in rownames(new_complications)){
     new_complications[i,j]=complications$Score[complications$Hospital.Name==i&complications$Measure.Name==j]
   }
 }
-new_complications<-new_complications[,-4]
 new_complications<-apply(new_complications,2,order)
 rownames(new_complications)<-levels(complications$Hospital.Name)
 averageNYCperformance<-rep(6,ncol(new_complications))
