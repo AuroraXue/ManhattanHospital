@@ -1,0 +1,25 @@
+---
+title: "Hospital Price Rank Analysis"
+output: html_notebook
+---
+
+```{r}
+Manhattan_hospital<-read.csv("hospital_manhattan_basic_info.csv")
+# summary(Manhattan_hospital$Price.Score)
+cost<-c()
+for (i in 1:nrow(Manhattan_hospital)){
+  if (is.na(Manhattan_hospital$Price.Score[i])==FALSE){
+    if (Manhattan_hospital$Price.Score[i]<0.965){
+    cost[i]<-"Lower than Average"
+  }else if(Manhattan_hospital$Price.Score[i]>=0.965 & Manhattan_hospital$Price.Score[i]<=0.9975){
+    cost[i]<-"About Average"
+  }else{
+     cost[i]<-"Above Average"
+    }
+  }else{
+     cost[i]<="NA"
+   }
+}
+Manhattan_hospital<-cbind(Manhattan_hospital,cost)
+```
+
