@@ -33,42 +33,42 @@ averageWaitingtime<-averageWaitingtime$Average.WaitingTime
 
 
 
-content1<-paste("<b><a href ='http://www.mountsinai.org'> Mount Sinai Hospital</a><b>","<br/>",
-                "Average Waiting Time: ",averageWaitingtime[1],"<br/>", 
-                "Cost Level: ",Manhattan_hospital$cost[1])
-content2<-paste("<b><a href ='http://www.mountsinai.org/locations/st-lukes'> Mount Sinai St. Luke's Hospital</a><b>","<br/>",
-                "Average Waiting Time: ",averageWaitingtime[2], "<br/>",
-                "Cost Level: ",Manhattan_hospital$cost[2])
-content3<-paste("<b><a href ='www.nyee.edu'> New York Eyes and Ear Infirmary</a><b>","<br/>",
-                "Average Waiting Time: ",averageWaitingtime[3],"<br/>", 
-                "Cost Level: ",Manhattan_hospital$cost[3])
-content4<-paste("<b><a href ='http://www.nyp.org/'> New York Presbyterian Hospital</a><b>","<br/>",
-                "Average Waiting Time: ",averageWaitingtime[4], "<br/>",
-                "Cost Level: ",Manhattan_hospital$cost[4])
-content5<-paste("<b><a href ='https://www.northwell.edu/find-care/locations/lenox-hill-hospital'> Lenox Hill Hospital | Northwell Health</a><b>","<br/>",
-                "Average Waiting Time: ",averageWaitingtime[5], "<br/>",
-                "Cost Level: ",Manhattan_hospital$cost[5])
-content6<-paste("<b><a href ='http://www.bethisraelny.org/petrie/'> Mount Sinai Beth Israel - Petrie Division</a><b>","<br/>",
-                "Average Waiting Time: ",averageWaitingtime[6], "<br/>",
-                "Cost Level: ",Manhattan_hospital$cost[6])
-content7<-paste("<b><a href ='http://www.nychealthandhospitals.org/metropolitan/'> NYC Health + Hospitals| Metropolitan</a><b>","<br/>",
-                "Average Waiting Time: ",averageWaitingtime[7], "<br/>",
+content7<-paste("<b><a href =' '> Mount Sinai Hospital</ a><b>","<br/>",
+                "Average Waiting Time: ",averageWaitingtime[7],"<br/>", 
                 "Cost Level: ",Manhattan_hospital$cost[7])
-content8<-paste("<b><a href ='http://www.nychealthandhospitals.org/bellevue/'> NYC Health + Hospitals| Bellevue</a><b>","<br/>",
-                "Average Waiting Time: ",averageWaitingtime[8], "<br/>",
-                "Cost Level: ",Manhattan_hospital$cost[8])
-content9<-paste("<b><a href ='https://profiles.health.ny.gov/hospital/view/103021'> NYU Hospital Center</a><b>","<br/>",
-                "Average Waiting Time: ",averageWaitingtime[9],"<br/>",
-                "Cost Level: ",Manhattan_hospital$cost[9])
-content10<-paste("<b><a href ='http://www.nychealthandhospitals.org/harlem/'> Harlem Hospital Center</a><b>","<br/>",
-                 "Average Waiting Time: ",averageWaitingtime[10], "<br/>",
-                 "Cost Level: ",Manhattan_hospital$cost[10])
-content11<-paste("<b><a href ='https://www.hss.edu/why-choose-hss.asp?gclid=COP0hOaFndICFQ5YDQodKWcJ4Q'> Hospital for Special Surgery</a><b>","<br/>",
-                 "Average Waiting Time: ",averageWaitingtime[11], "<br/>",
-                 "Cost Level: ",Manhattan_hospital$cost[11])
-content12<-paste("<b><a href ='https://www.rucares.org/'> The Rockefeller University Hospital</a><b>","<br/>",
+content12<-paste("<b><a href ='http://www.mountsinai.org/locations/st-lukes'> Mount Sinai St. Luke's Hospital</ a><b>","<br/>",
                  "Average Waiting Time: ",averageWaitingtime[12], "<br/>",
                  "Cost Level: ",Manhattan_hospital$cost[12])
+content8<-paste("<b><a href ='www.nyee.edu'> New York Eyes and Ear Infirmary</ a><b>","<br/>",
+                "Average Waiting Time: ",averageWaitingtime[8],"<br/>", 
+                "Cost Level: ",Manhattan_hospital$cost[8])
+content9<-paste("<b><a href ='http://www.nyp.org/'> New York Presbyterian Hospital</ a><b>","<br/>",
+                "Average Waiting Time: ",averageWaitingtime[9], "<br/>",
+                "Cost Level: ",Manhattan_hospital$cost[9])
+content4<-paste("<b><a href ='https://www.northwell.edu/find-care/locations/lenox-hill-hospital'> Lenox Hill Hospital | Northwell Health</ a><b>","<br/>",
+                "Average Waiting Time: ",averageWaitingtime[4], "<br/>",
+                "Cost Level: ",Manhattan_hospital$cost[4])
+content6<-paste("<b><a href ='http://www.bethisraelny.org/petrie/'> Mount Sinai Beth Israel - Petrie Division</ a><b>","<br/>",
+                "Average Waiting Time: ",averageWaitingtime[6], "<br/>",
+                "Cost Level: ",Manhattan_hospital$cost[6])
+content5<-paste("<b><a href ='http://www.nychealthandhospitals.org/metropolitan/'> NYC Health + Hospitals| Metropolitan</ a><b>","<br/>",
+                "Average Waiting Time: ",averageWaitingtime[5], "<br/>",
+                "Cost Level: ",Manhattan_hospital$cost[5])
+content1<-paste("<b><a href ='http://www.nychealthandhospitals.org/bellevue/'> NYC Health + Hospitals| Bellevue</ a><b>","<br/>",
+                "Average Waiting Time: ",averageWaitingtime[1], "<br/>",
+                "Cost Level: ",Manhattan_hospital$cost[1])
+content10<-paste("<b><a href ='https://profiles.health.ny.gov/hospital/view/103021'> NYU Hospital Center</ a><b>","<br/>",
+                 "Average Waiting Time: ",averageWaitingtime[10],"<br/>",
+                 "Cost Level: ",Manhattan_hospital$cost[10])
+content2<-paste("<b><a href ='http://www.nychealthandhospitals.org/harlem/'> Harlem Hospital Center</ a><b>","<br/>",
+                "Average Waiting Time: ",averageWaitingtime[2], "<br/>",
+                "Cost Level: ",Manhattan_hospital$cost[2])
+content3<-paste("<b><a href ='https://www.hss.edu/why-choose-hss.asp?gclid=COP0hOaFndICFQ5YDQodKWcJ4Q'> Hospital for Special Surgery</ a><b>","<br/>",
+                "Average Waiting Time: ",averageWaitingtime[3], "<br/>",
+                "Cost Level: ",Manhattan_hospital$cost[3])
+content11<-paste("<b><a href ='https://www.rucares.org/'> The Rockefeller University Hospital</ a><b>","<br/>",
+                 "Average Waiting Time: ",averageWaitingtime[11], "<br/>",
+                 "Cost Level: ",Manhattan_hospital$cost[11])
 hospital_content<-c(content1,content2,content3,content4,content5,content6,content7,content8,content9,content10,content11,content12)
 
 # Plot a default web map (brackets display the result)
