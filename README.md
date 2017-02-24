@@ -1,4 +1,4 @@
-# Project 2: Open Data App - an RShiny app development project
+# Project 2: Open Data App - QUALICARE (based on shiny app)
 
 ### [Project Description](doc/project2_desc.md)
 
@@ -21,12 +21,12 @@ The **learning goals** for this project is:
 Term: Spring 2017
 
 + Group 9
-+ **New York Hospital Care**:
-	+ Jinru Xue
-	+ Imroze Shaheen
++ **New York Hospital Care**:	
 	+ Yifei Tang
+	+ Imroze Shaheen
 	+ Vanessa Huang 
 	+ Boya Zhao
+	+ Jinru Xue
 
 + **Project summary**:Pay attention to patient safety measure for the hospital quality, based on HAI (Hospital Associated Infection), mortality estimate and main complications. Provide information, like rank and value plot about the predict mortality in last 30 days. Besides, give the radar plot about main complication may happen in the hospital. And make recommendation about the hospital based on customer's concern. Also, this app provides the visual bar plot about the history data of HAI to help customers to better decide which hospital to go.
 
