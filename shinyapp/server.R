@@ -64,7 +64,6 @@ apply_params <- function(state, outcome, range) {
 
 complications<-read.csv("Complications_Manhattan.csv")
 filename<-"hospital_manhattan_basic_info1.csv"
-
 Manhattan_hospital<-read.csv(file = filename,header=T)
 
 new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
@@ -121,10 +120,6 @@ shinyServer(function(input, output) {
     u1
     
   })
-  
-  
-  
-  
   
   nyc<-reactive({
     
@@ -184,7 +179,6 @@ shinyServer(function(input, output) {
                      "Average Waiting Time: ",averageWaitingtime[12], "<br/>",
                      "Cost Level: ",Manhattan_hospital$cost[12])
     hospital_content<-c(content1,content2,content3,content4,content5,content6,content7,content8,content9,content10,content11,content12)
-   
     rank<-seq(1,nrow(Manhattan_hospital))
     # Plot a default web map (brackets display the result)
     (m <- leaflet() %>% addTiles())
@@ -214,8 +208,6 @@ shinyServer(function(input, output) {
   })
     
 
-      
-    
     filtered <- reactive({
       apply_params(input$state, input$outcome, input$range)
     })
@@ -243,11 +235,7 @@ shinyServer(function(input, output) {
         theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), 
               panel.background = element_blank(), axis.line = element_line(colour = "black"),
               legend.position = "none") 
-      
-      # Cols für Plot
-      # $ Hospital                        (chr) "RUSSELLVILLE H.", "CRESTWOOD M.C.", "BAPTIST M.C. EAST", "PRAT...
-      # $ Rank                            (int) 1, 2, 3, 3, 5, 6, 7, 8, 9, 10, 11, 11, 13, 14, 14, 14, 17, 18, ...
-      # $ Value                           (dbl) 10.1, 10.2, 10.5, 10.5, 10.6, 10.7, 10.8, 11.0, 11.1, 11.2, 11....
+     
     })
     
     output$hospital <- renderText({
@@ -284,26 +272,11 @@ shinyServer(function(input, output) {
           addMarkers(Manhattan_hospital$Longitude[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))],
                      Manhattan_hospital$Latitude[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))],
                     popup=hospital_content[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))]
-                     # addPopups <- function(
-                     #   m, lng = Manhattan_hospital$lng[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))], 
-                     #   lat = Manhattan_hospital$lat[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))], popup, layerId = NULL, group = NULL,
-                     #   options = popupOptions(),
-                     #   data = getMapData(m)
-                     # ) {
-                     #   pts = derivePoints(data, lng, lat, missing(lng), missing(lat), "addPopups")
-                     #   invokeMethod(m, data, 'addPopups', pts$lat, pts$lng, popup, layerId, group, options) %>%
-                     #     expandLimits(pts$lat, pts$lng)
-                     # }
-          
                      ))
-        
-        
+
       })
     
-   
 
-#     
-   
     datasetInput <- reactive({
       switch(input$new_complications,
              "A wound that splits open  after surgery on the abdomen or pelvis" = ,
@@ -317,7 +290,6 @@ shinyServer(function(input, output) {
              "Serious blood clots after surgery" = ,
              "Serious complications" = )
     })
-    
    
   })
     
