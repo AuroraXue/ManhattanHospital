@@ -84,7 +84,7 @@ new_complications=rbind(new_complications,averageNYCperformance)
 
 
 
-source('helpers.R')
+source('helpers.R',local=T)
 library(fields)
 
 
@@ -283,7 +283,7 @@ shinyServer(function(input, output) {
           # add som markers:
           addMarkers(Manhattan_hospital$Longitude[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))],
                      Manhattan_hospital$Latitude[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))],
-                     popup=hospital_content[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))]
+                    popup=hospital_content[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))]
                      # addPopups <- function(
                      #   m, lng = Manhattan_hospital$lng[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))], 
                      #   lat = Manhattan_hospital$lat[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))], popup, layerId = NULL, group = NULL,

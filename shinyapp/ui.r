@@ -33,7 +33,7 @@ years <- c("2008" = "2008",
            "2012" = "2012",
            "2013" = "2013",
            "2014" = "2014")
-source('info.R')
+source('info.R',local=T)
 shinyUI(navbarPage("Hospital New York",theme = shinytheme("cerulean"),
                    
                    tabPanel("Introduction",
@@ -72,7 +72,9 @@ shinyUI(navbarPage("Hospital New York",theme = shinytheme("cerulean"),
                                 selectInput("care",
                                             h4("What you care about"),
                                             choices = colnames(new_complications),
-                                            hr())),
+                                            hr())#,
+                                          # submitButton("Show value")
+                                ),
                               mainPanel( 
                                 textOutput("hospital"),
                                 plotOutput('radarPlot1'),
@@ -87,8 +89,8 @@ shinyUI(navbarPage("Hospital New York",theme = shinytheme("cerulean"),
                      sidebarPanel(
                        h3('Hospital Associated Infection (HAI)'),
                        p('HAIs are among the leading causes of death in the United States. HAIs are largely preventable using widely publicized guidelines and interventions, such as better hygiene and advanced scientifically tested techniques. HAI measure data are collected by the Centers for Disease Control and Prevention (CDC) via the National Healthcare Safety Network (NHSN) tool.'),
-                       selectInput("year", "Year", choices = years),
-                       submitButton("Show value")
+                       selectInput("year", "Year", choices = years)#,
+                       #submitButton("Show value")
                      ),
                      mainPanel(
                        h5('Data from the Centers for Medicare & Medicaid Services'),
