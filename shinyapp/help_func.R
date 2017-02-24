@@ -1,5 +1,5 @@
-path_source <- '../data/Outcome of Care Measures.csv'
-path_cleaned <- '../cache/outcome.cleaned.RData'
+path_source <- 'Outcome of Care Measures.csv'
+path_cleaned <- 'outcome.cleaned.RData'
 
 
 tidy_data <- function() {
@@ -87,4 +87,5 @@ mid <- function(csv_df, nmin, nmax) {
 get_col_index <- function(csv_df, name) {
   which(colnames(csv_df) == name)
 }
+
 

@@ -63,7 +63,7 @@ apply_params <- function(state, outcome, range) {
 
 
 complications<-read.csv("Complications_Manhattan.csv")
-filename<-"../data/hospital_manhattan_basic_info1.csv"
+filename<-"hospital_manhattan_basic_info1.csv"
 
 Manhattan_hospital<-read.csv(file = filename,header=T)
 
@@ -282,8 +282,8 @@ shinyServer(function(input, output) {
           addTiles() %>%
           # add som markers:
           addMarkers(Manhattan_hospital$Longitude[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))],
-                     Manhattan_hospital$Latitude[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))]#,
-                     #popup=hospital_content[,names(which(new_complications[input$care]==1))]
+                     Manhattan_hospital$Latitude[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))],
+                     popup=hospital_content[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))]
                      # addPopups <- function(
                      #   m, lng = Manhattan_hospital$lng[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))], 
                      #   lat = Manhattan_hospital$lat[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))], popup, layerId = NULL, group = NULL,
