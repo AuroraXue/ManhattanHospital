@@ -271,7 +271,7 @@ shinyServer(function(input, output) {
           # add som markers:
           addMarkers(Manhattan_hospital$Longitude[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))],
                      Manhattan_hospital$Latitude[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))],
-                    popup=hospital_content[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))]
+                     popup=hospital_content[Manhattan_hospital$Hospital.Name==names(which(new_complications[,input$care]==1))]
                      ))
 
       })
