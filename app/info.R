@@ -6,6 +6,7 @@ br(),
 h4('QUALICARE'),
 p('This app pay attention to patient safety measure for the hospital quality, based on HAI(Hospital Associated Infection), mortality estimate and main complications. Provide information, like rank and value plot about the predict mortality in last 30 days. Besides, give the radar plot about main complication may happen in the hospital. And make recommendation about the hospital based on customer\'s concern. For the third part, this app provides the visual bar plot about the history data of HAI to help customers to better decide which hospital to go.
 '),
+img(src="name.png", height = 200, width = 300, align = "middle"),
 hr(),
 br(),
 
