@@ -1,4 +1,4 @@
-specialty_name<-c("CARDIAC SURGERY","GENERAL SURGERY","GYNECOLOGICAL ONCOLOGY","INFECTIOUS DISEASE","MEDICAL ONCOLOGY",
+pecialty_name<-c("CARDIAC SURGERY","GENERAL SURGERY","GYNECOLOGICAL ONCOLOGY","INFECTIOUS DISEASE","MEDICAL ONCOLOGY",
                   "NEPHROLOGY","OBSTETRICS/GYNECOLOGY","OPHTHALMOLOGY","SURGICAL ONCOLOGY","THORACIC SURGERY","VASCULAR SURGERY")
 len=length(specialty_name)
 
@@ -47,11 +47,3 @@ SpecialAverageScore<-c()
 for(i in 1:len){
   SpecialAverageScore[i]=mean(doctorScoreSpecial$score[doctorScoreHarlem$Primary.specialty==specialty_name[i]])
 }
-
-
-
-
-
-
-
-
