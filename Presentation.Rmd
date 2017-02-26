@@ -1,0 +1,88 @@
+---
+date: "February 24, 2017"
+output: html_document
+---
+
+
+
+```{r,fig.align='center',echo=FALSE}
+#op<-par(mfrow=c(1,2))
+#par(op)
+library("png")
+img<-readPNG("name.png")
+grid::grid.raster(img)
+
+```
+
+<center> <h1>PROBLEM</h1> </center>
+In 1999, the Institute of Medicine reported 98,000 patients die each year because of medical mistakes in hospitals. That journal of Patient Safety has said that number has been increasing and now is — between 210,000 and 440,000 patients. Medical errors has become the third-leading cause of death in America, behind heart disease, which is the first, and cancer, which is second.
+
+
+
+<center> <h1>SOLUTION</h1> </center>
+
+A web platform where clinicans and hospital administrators can explore Quality Indicators (QIs) that are readily available from the hospital inpatient and administrative data. 
+
+
+<center> <h1>QUALICARE</h1> </center>
+
+Qualicare is a web platform that allows for clincians, hospital administrators to purse performance goals that result in better clinical outcomes, an improved patient experience and reduce organization costs.
+
+This robust interactive analytical application integrates a variety of data sources such as mortality and complications data with a focus on HAIs(Hospital Associated Infections) that serve as qualithy indicators.
+
+
+```{r,fig.align='center',echo=FALSE}
+img1<-readPNG("screen.png")
+grid::grid.raster(img1)
+```
+
+
+<center> <h1>USE CASE 1</h1> </center>
+
+A hospital executive is interested in understanding the hospital HAI rates, specifically CLABSI rate as well in an effort to determine how compliant the doctors and nurses are at following best practices for hand hygiene. 
+
+
+### Outcome
+Examine CLABSI rates and CLABSI prevention bundle compliance measures across the enterprise to help make visible the opportunities for improvement.The predictive CLABSI modelling of CLABSI feature allows this user to find these outcome and intervention metrics.
+
+<center> <h1>USE CASE 2</h1> </center>
+User is unsure of which hospital is suitable for patient needs. There is no easy way for them to combine performance measures to evaluate the best choice for referal.
+
+###Outcome
+An app platform, where users can check the hospital perform based on estimate mortality, complications rank and HAI, to:
+
+* Get Suggestion when you have certin concern
+
+* Review local hospital's performance measures
+
+* Get Combined Information about hospital from one simply source
+
+<center> <h1>QUALICARE IS A RIGHT APP</h1> </center>
+
+
+```{r,fig.align='center',echo=FALSE}
+img2<-readPNG("1.png")
+grid::grid.raster(img2)
+```
+
+
+```{r,fig.align='center',echo=FALSE}
+img3<-readPNG("2.png")
+grid::grid.raster(img3)
+```
+
+```{r,fig.align='center',echo=FALSE}
+img4<-readPNG("3.png")
+grid::grid.raster(img4)
+```
+
+
+###### Our data source:
+https://data.medicare.gov/
+
+https://www.propublica.org/datastore/
+
+https://projects.propublica.org/emergency/
+
+https://www.qualityindicators.ahrq.gov/
+

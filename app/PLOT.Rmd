@@ -9,6 +9,7 @@ output: html_document
 complications<-read.csv("Complications_Manhattan.csv")
 new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
 colnames(new_complications)<-levels(complications$Measure.Name)
+colnames(new_complications)
 rownames(new_complications)<-levels(complications$Hospital.Name)
 for(i in rownames(new_complications)){
   for(j in colnames(new_complications)){
@@ -21,42 +22,7 @@ rownames(new_complications)<-levels(complications$Hospital.Name)
 averageNYCperformance<-rep(6,ncol(new_complications))
 new_complications=rbind(new_complications,averageNYCperformance)
 
-# Table for most recommend hospital
-mostRecommendHospital<-as.data.frame(matrix(NA,nrow =1, ncol=10))
-colnames(mostRecommendHospital)<-colnames(new_complications)
-for(i in 1:10){
-  mostRecommendHospital[1,i]<-names(sort(new_complications[,i])[1])
-}
-
-
 library(fmsb)
-
-# i = names of the hospital
-df=as.data.frame(rbind(rep(11,10) , rep(0,10) , new_complications[i,]))
-
-radarchart( df  , axistype=1 , 
- 
-    #custom polygon
-    pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=2 , 
- 
-    #custom the grid
-    cglcol="grey",cglty=1, axislabcol="grey", caxislabels=seq(0,12,3),cglwd=0.2,
- 
-    title = "COMPLICATIONS PERFORMANCE",
-    vlabels=c("Wound Reopen","Accidental Cut","Blood Stream","Collapsed Lung","Death Rate of Complications","Infections","Pressure Sore","Hip/Knee Replacement Complication Rate","Serious Blood Clots","Serious Complications"),
-    #custom labels
-    vlcex=0.4 
-    )
-legend(0.9,1.2,
-       legend=c("0-3:Best Performance","3-6:Below Average","6-9:Above Average","9-12:Worse Performance"),text.col="black",
-       bty = "n",cex = 0.7)
-
-
-
-
-
-
-
 
 #matrix for BELLEVUE HOSPITAL CENTER
 BELLEVUE_HOSPITAL_CENTER<-new_complications["BELLEVUE HOSPITAL CENTER",]

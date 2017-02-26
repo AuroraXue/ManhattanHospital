@@ -1,0 +1,23 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+
+
+```{r}
+setwd("~/Desktop/sem 2/Applied data science/Spr2017-proj2-grp9/data")
+Doc <- read.csv("Physician_Compare_NY.csv")
+man_hos <- read.csv("manhattan_hospital_basic_update.csv")
+
+hospital_code <- c(330024, 330046, 330100, 330101, 330119, 330169, 330199, 330204, 330214, 330240, 330270, 330387)
+doc_hos <- list()
+for (i in 1:length(hospital_code)) {
+  doc_hos[[i]] <- which(Doc$Hospital.affiliation.CCN.1 == hospital_code[i] | Doc$Hospital.affiliation.CCN.2 == hospital_code[i]| Doc$Hospital.affiliation.CCN.3 == hospital_code[i])
+}
+hospital <- levels(man_hos$Hospital.Name)
+head(doc_hos[[1]])
+head(doc_hos[[2]])
+```
+
