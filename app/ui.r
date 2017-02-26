@@ -164,6 +164,7 @@ shinyUI(navbarPage("Hospital New York",theme = shinytheme("cerulean"),
                      mainPanel(
                        h5('Data from the Centers for Medicare & Medicaid Services'),
                        p('Smaller values indicate lower rates of infection. Hospitals may be missing due to lack of data or they do not take Medicare or Medicaid patients.'),
+                       img(src="bar2.png", height = 400, width = 650, align = "middle"),
                        showOutput('newBar', 'dimple')
                      )
                    ))
