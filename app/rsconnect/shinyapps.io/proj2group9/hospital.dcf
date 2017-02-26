@@ -3,8 +3,6 @@ title: hospital
 account: proj2group9
 server: shinyapps.io
 appId: 159098
-bundleId: 723827
+bundleId: 724908
 url: https://proj2group9.shinyapps.io/hospital/
-when: 1487952998.15269
-asMultiple: FALSE
-asStatic: FALSE
+when: 1488058563.20791
