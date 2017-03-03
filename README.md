@@ -23,7 +23,6 @@ Term: Spring 2017
 + Group 9
 + **New York Hospital Care**:	
 	+ Yifei Tang
-	+ is2548
 	+ Vanessa Huang 
 	+ Boya Zhao
 	+ Jinru Xue
