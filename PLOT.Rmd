@@ -9,6 +9,7 @@ output: html_document
 complications<-read.csv("Complications_Manhattan.csv")
 new_complications<-as.data.frame(matrix(NA,ncol=length(levels(complications$Measure.Name)),nrow=length(levels(complications$Hospital.Name))))
 colnames(new_complications)<-levels(complications$Measure.Name)
+colnames(new_complications)
 rownames(new_complications)<-levels(complications$Hospital.Name)
 for(i in rownames(new_complications)){
   for(j in colnames(new_complications)){
