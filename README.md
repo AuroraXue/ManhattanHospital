@@ -25,6 +25,7 @@ Term: Spring 2017
 	+ Yifei Tang
 	+ Vanessa Huang 
 	+ Boya Zhao
+	+ Imroze Shaheen
 	+ Jinru Xue
 
 + **Project summary**:Pay attention to patient safety measure for the hospital quality, based on HAI (Hospital Associated Infection), mortality estimate and main complications. Provide information, like rank and value plot about the predict mortality in last 30 days. Besides, give the radar plot about main complication may happen in the hospital. And make recommendation about the hospital based on customer's concern. Also, this app provides the visual bar plot about the history data of HAI to help customers to better decide which hospital to go.
